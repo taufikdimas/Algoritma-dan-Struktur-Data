@@ -44,6 +44,13 @@ secara berurutan? Jelaskan alasannya!
 6. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Buku!
 
+### 2.4 Latihan Praktikum
+### 1. 
+tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f76daca3-f347-419a-856a-4ba3e1b5af9c)
+
+### 2.
+
 
 
 
