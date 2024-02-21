@@ -30,9 +30,12 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/814b5a1a-9f64-4a8d-a6ed-80f96412b6e4)
 ### 2.2.3 Pertanyaan
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
-Apa nama object yang dihasilkan?
-2. Bagaimana cara mengakses atribut dan method dari suatu objek?
-3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
+Apa nama object yang dihasilkan?<br>
+=> bk1
+2. Bagaimana cara mengakses atribut dan method dari suatu objek?<br>
+=> dengan menuliskan nama object lalu ditambahkan titik dan ditambahkan atribut yang ingin diakses
+3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?,<br>
+=> Output dari pemanggilan method tampilInformasi() pertama dan kedua berbeda karena nilai atribut objek bk1 telah diubah di antara dua pemanggilan tersebut.
 
 ### 2.3 Percobaan 3: Membuat Konstruktor
 ### 2.3.2 Verifikasi Hasil Percobaan
