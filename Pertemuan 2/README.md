@@ -13,7 +13,8 @@
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/ecaca441-5d0b-4cf6-93c1-64fdfd7d374b)
 ### 2.1.3 Pertanyaan
 1. Sebutkan dua karakteristik class atau object!<br>
-=> Encapsulation =
+=> Encapsulation = karakteristik ini menyembunyikan atau memproteksi suatu proses dari kemungkinan interferensi atau penyalahgunaan dari luar sistem dan sekaligus menyederhanakan penggunaan sistem tersebut. contoh menyembunyikan variabel anggota (judul, stok, harga) dengan akses modifier default dan hanya dapat diakses dengan metode public seperti (terjual(), restock() )<br>
+=> Inheritance = karakteristik ini mewariskan attribute dan method yang dimiliki oleh sebuah class kepada class turunannya. 
 3. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
 Buku? Sebutkan apa saja atributnya!
 4. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
