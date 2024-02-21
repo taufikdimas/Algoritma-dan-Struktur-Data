@@ -12,7 +12,7 @@
 ### 2.1.2 Verifikasi Hasil Percobaan
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/ecaca441-5d0b-4cf6-93c1-64fdfd7d374b)
 ### 2.1.3 Pertanyaan
-1. Sebutkan dua karakteristik class atau object!
+1. Sebutkan dua karakteristik class atau object!<br>
 => Encapsulation =
 3. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
 Buku? Sebutkan apa saja atributnya!
