@@ -22,11 +22,9 @@ Buku? Sebutkan apa saja atributnya!<br>
 => Terdapat 4 method pada class tersebut yaitu tampilInformasi(), terjual(int jml), restock(int jml), gantiHarga(int hrg)
 5. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
 sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!<br>
-=> ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f9804c1f-551a-41e7-8e0c-4fb7ac574c67)
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/c840059f-ead3-4fe0-bbf4-d223d73ac6bf)
-
-
-7. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
+=> ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/75975459-e6c8-4a91-b13f-0d74997e2811)
+7. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?<br>
+=> Method restock() memiliki satu parameter berupa bilangan bulat agar kita dapat dengan mudah menentukan jumlah buku yang akan ditambahkan ke stok tanpa perlu mengubah kode method setiap kali restok dilakukan.
 ### 2.2 Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 ### 2.2.2 Verifikasi Hasil Percobaan
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/814b5a1a-9f64-4a8d-a6ed-80f96412b6e4)
