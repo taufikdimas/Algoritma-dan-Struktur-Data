@@ -1,7 +1,7 @@
 # Week 02 - Object
 
 **Nama :** Taufik Dimas Edystara<br>
-**NIM :** 2341720062<br>
+**NIM  :** 2341720062<br>
 **Kelas :** TI-1B<br>
 **Absen :** 27
 
