@@ -1,7 +1,7 @@
 # Week 02 - Object
 
-**Nama :** Taufik Dimas Edystara<br>
-**NIM  :** 2341720062<br>
+**Nama  :** Taufik Dimas Edystara<br>
+**NIM   :** 2341720062<br>
 **Kelas :** TI-1B<br>
 **Absen :** 27
 
@@ -19,6 +19,33 @@ Buku? Sebutkan apa saja atributnya!
 4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
 sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!
 5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
+### 2.2 Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
+### 2.2.2 Verifikasi Hasil Percobaan
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/814b5a1a-9f64-4a8d-a6ed-80f96412b6e4)
+### 2.2.3 Pertanyaan
+1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
+Apa nama object yang dihasilkan?
+2. Bagaimana cara mengakses atribut dan method dari suatu objek?
+3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
+
+### 2.3 Percobaan 3: Membuat Konstruktor
+### 2.3.2 Verifikasi Hasil Percobaan
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b73c3ee2-2155-4f00-80dc-c2d0d1ac42ea)
+### 2.3.3 Pertanyaan
+1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
+mendeklarasikan konstruktor berparameter!
+2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?
+   ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/3f4d81b6-89ad-4eff-8b27-ff0add41d882)
+
+4. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana
+hasilnya? Jelaskan mengapa hasilnya demikian!
+5. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses
+secara berurutan? Jelaskan alasannya!
+6. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
+berparameter dari class Buku!
+
+
+
 
   
 
