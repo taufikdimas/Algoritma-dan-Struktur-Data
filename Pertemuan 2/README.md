@@ -1,7 +1,7 @@
 # Week 02 - Object
 
-**Nama :** Taufik Dimas Edystara<br>
-**NIM :** 2341720062<br>
+**Nama  :** Taufik Dimas Edystara<br>
+**NIM   :** 2341720062<br>
 **Kelas :** TI-1B<br>
 **Absen :** 27
 
@@ -20,7 +20,7 @@ Buku? Sebutkan apa saja atributnya!
 sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!
 5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
 
-  
+
 
 
 ```
