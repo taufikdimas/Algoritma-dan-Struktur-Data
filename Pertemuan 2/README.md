@@ -1,6 +1,6 @@
 # Week 02 - Object
 
-**Nama**:** Taufik Dimas Edystara<br>
+**Nama  :** Taufik Dimas Edystara<br>
 **NIM   :** 2341720062<br>
 **Kelas :** TI-1B<br>
 **Absen :** 27
@@ -18,7 +18,8 @@
 3. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
 Buku? Sebutkan apa saja atributnya!<br>
 => Baris program tersebut membuat objek baru dari kelas Buku27 dengan nama bk2 dan menginisialisasi atribut-atributnya dengan nilai yang diberikan sebagai argumen konstruktor.
-4. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
+4. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!<br>
+=> Terdapat 4 method pada class tersebut yaitu tampilInformasi(), terjual(int jml), restock(int jml), gantiHarga(int hrg)
 5. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
 sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!
 6. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
