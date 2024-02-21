@@ -12,13 +12,19 @@
 ### 2.1.2 Verifikasi Hasil Percobaan
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/ecaca441-5d0b-4cf6-93c1-64fdfd7d374b)
 ### 2.1.3 Pertanyaan
-1. Sebutkan dua karakteristik class atau object!
-2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
-Buku? Sebutkan apa saja atributnya!
-3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
-4. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
-sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!
-5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?
+1. Sebutkan dua karakteristik class atau object!<br>
+=> Encapsulation = karakteristik ini menyembunyikan atau memproteksi suatu proses dari kemungkinan interferensi atau penyalahgunaan dari luar sistem dan sekaligus menyederhanakan penggunaan sistem tersebut. contoh menyembunyikan variabel anggota (judul, stok, harga) dengan akses modifier default dan hanya dapat diakses dengan metode public seperti (terjual(), restock() )<br>
+=> Inheritance = karakteristik ini mewariskan attribute dan method yang dimiliki oleh sebuah class kepada class turunannya. 
+3. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
+Buku? Sebutkan apa saja atributnya!<br>
+=> Baris program tersebut membuat objek baru dari kelas Buku27 dengan nama bk2 dan menginisialisasi atribut-atributnya dengan nilai yang diberikan sebagai argumen konstruktor.
+4. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!<br>
+=> Terdapat 4 method pada class tersebut yaitu tampilInformasi(), terjual(int jml), restock(int jml), gantiHarga(int hrg)
+5. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
+sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih besar dari 0)!<br>
+=> ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/75975459-e6c8-4a91-b13f-0d74997e2811)
+7. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?<br>
+=> Method restock() memiliki satu parameter berupa bilangan bulat agar kita dapat dengan mudah menentukan jumlah buku yang akan ditambahkan ke stok tanpa perlu mengubah kode method setiap kali restok dilakukan.
 ### 2.2 Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 ### 2.2.2 Verifikasi Hasil Percobaan
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/814b5a1a-9f64-4a8d-a6ed-80f96412b6e4)
@@ -43,6 +49,13 @@ hasilnya? Jelaskan mengapa hasilnya demikian!
 secara berurutan? Jelaskan alasannya!
 6. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Buku!
+
+### 2.4 Latihan Praktikum
+### 1. 
+tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f76daca3-f347-419a-856a-4ba3e1b5af9c)
+
+### 2.
 
 
 
