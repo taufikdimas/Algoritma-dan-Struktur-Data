@@ -64,7 +64,8 @@ berparameter dari class Buku!<br>
 ### 2.4 Latihan Praktikum
 ### 1. tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku<br>
 => program<br>
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/178b6169-3c29-4aad-b21e-b9a22394a50c)<br>
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1248de99-1e36-47cd-9d7b-bc499aa21c33)<br>
+
 => Output<br> 
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b92abbc9-2fd4-4f1a-98de-61ea65c4a12d)
 
