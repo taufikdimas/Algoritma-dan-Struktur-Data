@@ -1,4 +1,4 @@
-# Week 02 - Object
+# Jobsheet 02 - Object
 
 **Nama  :** Taufik Dimas Edystara<br>
 **NIM   :** 2341720062<br>
@@ -63,8 +63,10 @@ berparameter dari class Buku!<br>
 
 ### 2.4 Latihan Praktikum
 ### 1. tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku<br>
-=> program ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/178b6169-3c29-4aad-b21e-b9a22394a50c)
-=> Output ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b92abbc9-2fd4-4f1a-98de-61ea65c4a12d)
+=> program<br>
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/178b6169-3c29-4aad-b21e-b9a22394a50c)
+=> Output<br> 
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b92abbc9-2fd4-4f1a-98de-61ea65c4a12d)
 
 
 
