@@ -18,5 +18,10 @@ public class BukuMain27 {
 
         Buku27 bukuTaufik = new Buku27("One Piece", "Eiichiro Oda", 214, 10, 50000);
         bukuTaufik.tampilInformasi();
+        bukuTaufik.terjual(5);
+
+        System.out.println("Total Harga : " + bukuTaufik.hitungHargaTotal());
+        System.out.println("Diskon : " + bukuTaufik.hitungDiskon());
+        System.out.println("Total Bayar : " + bukuTaufik.hitungHargaBayar());
     }
 }
