@@ -17,7 +17,7 @@
 => Inheritance = karakteristik ini mewariskan attribute dan method yang dimiliki oleh sebuah class kepada class turunannya. 
 3. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
 Buku? Sebutkan apa saja atributnya!<br>
-=> Baris program tersebut membuat objek baru dari kelas Buku27 dengan nama bk2 dan menginisialisasi atribut-atributnya dengan nilai yang diberikan sebagai argumen konstruktor.
+=> terdapat 5 atribut yauti judul, pengarang, halaman, stok, harga
 4. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!<br>
 => Terdapat 4 method pada class tersebut yaitu tampilInformasi(), terjual(int jml), restock(int jml), gantiHarga(int hrg)
 5. Perhatikan method terjual() yang terdapat di dalam class Buku. Modifikasi isi method tersebut
@@ -31,10 +31,11 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 ### 2.2.3 Pertanyaan
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
 Apa nama object yang dihasilkan?<br>
-=> bk1
-2. Bagaimana cara mengakses atribut dan method dari suatu objek?<br>
+=>  Buku27 bk1 = new Buku27();
+=> menghasilkan object bk1
+3. Bagaimana cara mengakses atribut dan method dari suatu objek?<br>
 => dengan menuliskan nama object lalu ditambahkan titik dan ditambahkan atribut yang ingin diakses
-3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?,<br>
+4. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?,<br>
 => Output dari pemanggilan method tampilInformasi() pertama dan kedua berbeda karena nilai atribut objek bk1 telah diubah di antara dua pemanggilan tersebut.
 
 ### 2.3 Percobaan 3: Membuat Konstruktor
