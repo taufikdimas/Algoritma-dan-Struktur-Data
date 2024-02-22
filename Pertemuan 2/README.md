@@ -58,12 +58,15 @@ secara berurutan? Jelaskan alasannya!<br>
 => tidak harus berurutan, karena ruutan deklarasi method tidak mempengaruhi cara pemanggilan method pada objeknya. Sehingga dapat memanggil method sesuai kebutuhan, tidak terikat pada urutan deklarasi method di dalam class.
 7. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Buku!<br>
-=> 
+=> ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/ae3315d1-211d-453b-bb3a-c8777ca411e9)
+
 
 ### 2.4 Latihan Praktikum
-### 1. 
-tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f76daca3-f347-419a-856a-4ba3e1b5af9c)
+### 1. tambahkan tiga method yaitu hitungHargaTotal(),hitungDiskon(), dan hitungHargaBayar() pada class Buku
+=> program ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/178b6169-3c29-4aad-b21e-b9a22394a50c)
+=> Output ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b92abbc9-2fd4-4f1a-98de-61ea65c4a12d)
+
+
 
 ### 2.
 
