@@ -16,5 +16,7 @@ public class BukuMain27 {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
+        Buku27 bukuTaufik = new Buku27("One Piece", "Eiichiro Oda", 214, 10, 50000);
+        bukuTaufik.tampilInformasi();
     }
 }
