@@ -31,7 +31,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 ### 2.2.3 Pertanyaan
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
 Apa nama object yang dihasilkan?<br>
-=>  Buku27 bk1 = new Buku27();
+=>  Buku27 bk1 = new Buku27(); <br>
 => menghasilkan object bk1
 3. Bagaimana cara mengakses atribut dan method dari suatu objek?<br>
 => dengan menuliskan nama object lalu ditambahkan titik dan ditambahkan atribut yang ingin diakses
@@ -43,16 +43,22 @@ Apa nama object yang dihasilkan?<br>
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b73c3ee2-2155-4f00-80dc-c2d0d1ac42ea)
 ### 2.3.3 Pertanyaan
 1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
-mendeklarasikan konstruktor berparameter!
+mendeklarasikan konstruktor berparameter!<br>
+=> ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/fd9b4a44-bb61-4ade-a099-715ea1b30f9e)
+
 2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?
    ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/3f4d81b6-89ad-4eff-8b27-ff0add41d882)
+   => Objek bk2 diinstansiasi dengan memberikan nilai atribut melalui konstruktor berparameter secara langsung.dalam baris kode tersebut  objek bk2 dibuat dengan menggunakan konstruktor berparameter yang langsung menerima nilai untuk judul, pengarang, jumlah halaman, stok, dan harga.
 
 4. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana
-hasilnya? Jelaskan mengapa hasilnya demikian!
+hasilnya? Jelaskan mengapa hasilnya demikian!<br>
+=> akan terjadi error, karena saat mencoba menginstansiasi objek bk1 tanpa parameter, akan terjadi kesalahan kompilasi karena tidak ada konstruktor default yang tersedia. Sehingga, hasilnya adalah kesalahan kompilasi saat mencoba menginstansiasi objek bk1.
 5. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses
-secara berurutan? Jelaskan alasannya!
-6. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
-berparameter dari class Buku!
+secara berurutan? Jelaskan alasannya!<br>
+=> tidak harus berurutan, karena ruutan deklarasi method tidak mempengaruhi cara pemanggilan method pada objeknya. Sehingga dapat memanggil method sesuai kebutuhan, tidak terikat pada urutan deklarasi method di dalam class.
+7. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor
+berparameter dari class Buku!<br>
+=> 
 
 ### 2.4 Latihan Praktikum
 ### 1. 
