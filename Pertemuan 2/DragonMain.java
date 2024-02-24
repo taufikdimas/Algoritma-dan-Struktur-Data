@@ -32,6 +32,7 @@ public class DragonMain {
                     break;
                 case 4:
                     playerTaufik.moveDown();
+                    break;
                 default:
                     System.out.println("Input tidak valid.");
             }
