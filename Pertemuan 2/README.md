@@ -74,7 +74,7 @@ berparameter dari class Buku!<br>
 ![asd p2 t2](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/53f54234-66a2-41c0-b4f2-f7f074c75b87)
 
 => Output <br>
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/cdc6acbb-c2ae-422e-a911-51b0c7a72dcf)
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/e1655994-9cf6-492b-8d8d-b752085493fb)
 
 
 
