@@ -100,3 +100,13 @@ public class PratikumPemilihan {
 }
 
 ```
+### **2.2.2 Hasil Percobaan**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/3eee0177-d799-4c88-84e2-61936038fca5)
+
+
+``Jika nilai lebih besar dari ketentuan``
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1206bfe6-ba65-4b76-9dc3-02f5ab57d321)
+
+
+
+
