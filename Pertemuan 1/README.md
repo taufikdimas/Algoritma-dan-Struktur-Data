@@ -3,7 +3,9 @@
 <br><br>
 
 <p align="center">
- < ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1c2ab752-dd8f-4aa8-acb8-85533f57dc90)>
+ 
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/9cc35545-a8ad-4dbd-aa2c-8fd11c2fb3f0)
+
 
 </p>
 
