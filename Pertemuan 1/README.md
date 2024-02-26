@@ -383,9 +383,112 @@ public class Tugas1_27 {
 
 ### **3.2 Pertanyaan**
 ``Buat program untuk menghitung rumus kecepatan, jarak, dan waktu``<br>
-`` Program yang dibuat memiliki fungsi sebagai berikut: ``
-``a. Menu (Untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)``
-``b. Menghitung hasil perhitungan Kecepatan``
-``c. Menghitung hasil perhitungan Jarak``
-``d. Menghitung hasil perhitungan Waktu``
-``Panggil fungsi-fungsi tersebut pada fungsi main!``
+`` Program yang dibuat memiliki fungsi sebagai berikut: `` <br>
+``a. Menu (Untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)`` <br>
+``b. Menghitung hasil perhitungan Kecepatan`` <br>
+``c. Menghitung hasil perhitungan Jarak``<br>
+``d. Menghitung hasil perhitungan Waktu``<br>
+``Panggil fungsi-fungsi tersebut pada fungsi main!``<br>
+
+
+### **3.2.1 Kode Percobaan**
+```java
+import java.util.Scanner;
+
+public class Tugas2_27 {
+    public static void main(String[] args) {
+        menu();
+    }
+
+    public static void menu() {
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("Menu:");
+            System.out.println("1. Hitung Kecepatan");
+            System.out.println("2. Hitung Jarak");
+            System.out.println("3. Hitung Waktu");
+            System.out.println("4. Keluar");
+            System.out.print("Pilih: ");
+            choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    hitungKecepatan();
+                    break;
+                case 2:
+                    hitungJarak();
+                    break;
+                case 3:
+                    hitungWaktu();
+                    break;
+                case 4:
+                    System.out.println("Terima kasih!");
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid.");
+            }
+        } while (choice != 4);
+    }
+
+    public static void hitungKecepatan() {
+        Scanner scanner = new Scanner(System.in);
+        double jarak, waktu;
+
+        System.out.print("Masukkan jarak (km): ");
+        jarak = scanner.nextDouble();
+        System.out.print("Masukkan waktu (jam): ");
+        waktu = scanner.nextDouble();
+
+        double kecepatan = jarak / waktu;
+        System.out.println("Kecepatan adalah: " + kecepatan + " km/jam");
+    }
+
+    public static void hitungJarak() {
+        Scanner scanner = new Scanner(System.in);
+        double kecepatan, waktu;
+
+        System.out.print("Masukkan kecepatan (km/jam): ");
+        kecepatan = scanner.nextDouble();
+        System.out.print("Masukkan waktu (jam): ");
+        waktu = scanner.nextDouble();
+
+        double jarak = kecepatan * waktu;
+        System.out.println("Jarak adalah: " + jarak + " km");
+    }
+
+    public static void hitungWaktu() {
+        Scanner scanner = new Scanner(System.in);
+        double jarak, kecepatan;
+
+        System.out.print("Masukkan jarak (km): ");
+        jarak = scanner.nextDouble();
+        System.out.print("Masukkan kecepatan (km/jam): ");
+        kecepatan = scanner.nextDouble();
+
+        double waktu = jarak / kecepatan;
+        System.out.println("Waktu adalah: " + waktu + " jam");
+    }
+}
+```
+
+### **3.2.2 Hasil Percobaan**
+``a. Menu (Untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)`` <br>
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/51866af0-03f5-4305-97bf-b4a2e6ffa64e)
+
+``b. Menghitung hasil perhitungan Kecepatan`` <br>
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/271b43c5-4ab1-423b-8057-f20a8301c0ab)
+
+
+``c. Menghitung hasil perhitungan Jarak``<br>
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/5688f21a-5a29-4e00-9522-5f5aed50a549)
+
+
+``d. Menghitung hasil perhitungan Waktu``<br>
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/6458c200-87e3-41f0-8151-113ae4306d22)
+
