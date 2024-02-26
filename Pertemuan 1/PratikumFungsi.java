@@ -76,4 +76,5 @@ public class PratikumFungsi {
         }
         System.out.println("Stok berhasil diperbarui untuk Cabang " + perbaruiStok + "!");
     }
+    // tes
 }
