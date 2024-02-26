@@ -65,6 +65,6 @@ public class PratikumArray {
         System.out.println("IP Semester : " + ipSemester);
 
         scanner.close();
-        // tes
+
     }
 }
