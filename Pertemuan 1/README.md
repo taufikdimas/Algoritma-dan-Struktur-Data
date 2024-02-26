@@ -21,7 +21,7 @@
 
 ***
 
-## Praktikum Pemilihan
+## Pemilihan
 ### **2.2.1 Praktikum Pemilihan**
 ```java
 import java.util.Scanner;
@@ -103,10 +103,44 @@ public class PratikumPemilihan {
 ### **2.2.2 Hasil Percobaan**
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/3eee0177-d799-4c88-84e2-61936038fca5)
 
-
 ``Jika nilai lebih besar dari ketentuan``<br>
+
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1206bfe6-ba65-4b76-9dc3-02f5ab57d321)
 
+
+## Perulangan
+### **2.3.1 Praktikum Perulangan**
+```java
+import java.util.Scanner;
+
+public class PratikumPerulangan {
+    public static void main(String[] args) {
+        Scanner sc27 = new Scanner(System.in);
+
+        System.out.print("Masukkan NIM: ");
+        String nim = sc27.nextLine();
+        int n = Integer.parseInt(nim.substring(nim.length() - 2));
+
+        if (n < 10) {
+            n += 10;
+        }
+
+        for (int i = 1; i <= n; i++) {
+            if (i == 6 || i == 10) {
+                continue;
+            }
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            } else {
+                System.out.print("* ");
+            }
+        }
+    }
+}
+```
+### **2.3.2 Hasil Percobaan**
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/4e805ca3-8ea3-478e-9670-0f5becca10d0)
 
 
 
