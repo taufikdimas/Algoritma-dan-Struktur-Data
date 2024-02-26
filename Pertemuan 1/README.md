@@ -381,4 +381,11 @@ public class Tugas1_27 {
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f56eb4c1-686a-436c-af81-f3b09977ba3c)
 
 
-
+### **3.2 Pertanyaan**
+``Buat program untuk menghitung rumus kecepatan, jarak, dan waktu``
+`` Program yang dibuat memiliki fungsi sebagai berikut: ``
+``a. Menu (Untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)``
+``b. Menghitung hasil perhitungan Kecepatan``
+``c. Menghitung hasil perhitungan Jarak``
+``d. Menghitung hasil perhitungan Waktu``
+``Panggil fungsi-fungsi tersebut pada fungsi main!``
