@@ -62,7 +62,7 @@ public class PratikumArray {
         }
         System.out.println("=====================================================================================");
 
-        System.out.println("IP Semester Anda adalah: " + ipSemester);
+        System.out.println("IP Semester : " + ipSemester);
 
         scanner.close();
     }
