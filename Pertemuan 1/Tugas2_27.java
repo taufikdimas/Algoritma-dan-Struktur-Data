@@ -75,5 +75,4 @@ public class Tugas2_27 {
         double waktu = jarak / kecepatan;
         System.out.println("Waktu adalah: " + waktu + " jam");
     }
-    // tes
 }
