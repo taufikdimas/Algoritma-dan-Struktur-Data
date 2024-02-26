@@ -40,5 +40,6 @@ public class Tugas1_27 {
         } else {
             System.out.println("Kode plat mobil tidak valid.");
         }
+        // tes
     }
 }
