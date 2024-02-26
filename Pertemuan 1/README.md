@@ -5,7 +5,7 @@
 <p align="center">
  
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/9cc35545-a8ad-4dbd-aa2c-8fd11c2fb3f0)
-<img src="./docs/LogoPolinema.png" alt="Your Image Description">
+img src="./docs/LogoPolinema.png" alt="Your Image Description"
 
 
 </p>
