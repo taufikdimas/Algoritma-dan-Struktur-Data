@@ -309,12 +309,74 @@ public class PratikumFungsi {
 
 ### **2.5.2 Hasil Percobaan**
 `` 1. menampilkan pendapatan setiap cabang jika semua bunga habis terjual.`` <br>
+
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/38c3e5eb-6185-4fe2-a4a5-2e831bb68092) <br>
 `` 2.a  fungsi untuk mengetahui jumlah Stock setiap jenis bunga pada cabang royalgarden 4`` <br> 
+
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/14763a15-b2c2-423c-88a6-e6604283aba5) <br>
+
 `` 2.b Jika terdapat informasi tambahan berupa pengurangan stock karena bunga tersebut mati.Dengan rincian Aglonema -1, Keladi -2, Alocasia -0, Mawar -5.`` <br>
+
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/6d6e70f0-71ee-4092-9806-f09f67e8839e) <br>
 
+
+
+## Tugas
+### **3.1 Pertanyaan**
+`` Susun program untuk membuat dua buah array berikut isinya sebagai berikut. Array pertama adalah array satu dimensi char KODE[10], berisi kode plat mobil. Array kedua, array dua dimensi char KOTA[10][12] berisi nama kota yang berpasangan dengan kode plat mobil.  ``
+
+### **3.1.1 Kode Percobaan**
+```java
+import java.util.Scanner;
+
+public class Tugas1_27 {
+    public static void main(String[] args) {
+        // Array kode plat mobil
+        char[] KODE = { 'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T' };
+        // Array nama kota
+        String[][] KOTA = {
+                { "B", "A", "N", "T", "E", "N" },
+                { "J", "A", "K", "A", "R", "T", "A" },
+                { "B", "A", "N", "D", "U", "N", "G" },
+                { "C", "I", "R", "E", "B", "O", "N" },
+                { "B", "O", "G", "O", "R" },
+                { "P", "E", "K", "A", "L", "O", "N", "G", "A", "N" },
+                { "S", "E", "M", "A", "R", "A", "N", "G" },
+                { "S", "U", "R", "A", "B", "A", "Y", "A" },
+                { "M", "A", "L", "A", "N", "G" },
+                { "T", "E", "G", "A", "L" }
+        };
+
+        Scanner sc27 = new Scanner(System.in);
+        System.out.print("Masukkan kode plat mobil: ");
+        char kode = sc27.next().charAt(0);
+        sc27.close();
+
+        // mencari nama kota berdasarkan kode plat mobil
+        int kodeIndex = -1;
+        for (int i = 0; i < KODE.length; i++) {
+            if (KODE[i] == kode) {
+                kodeIndex = i;
+                break;
+            }
+        }
+
+        // menampilkan kota sesuai kode plat
+        if (kodeIndex != -1) {
+            for (int j = 0; j < KOTA[kodeIndex].length; j++) {
+                System.out.print(KOTA[kodeIndex][j]);
+            }
+        } else {
+            System.out.println("Kode plat mobil tidak valid.");
+        }
+    }
+}
+
+```
+
+### **3.1.2 Hasil Percobaan**
+
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/f56eb4c1-686a-436c-af81-f3b09977ba3c)
 
 
 
