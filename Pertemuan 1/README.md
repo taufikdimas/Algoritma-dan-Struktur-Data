@@ -308,11 +308,11 @@ public class PratikumFungsi {
 ```
 
 ### **2.5.2 Hasil Percobaan**
-`` 1. menampilkan pendapatan setiap cabang jika semua bunga habis terjual.`` <br>
+`` 1. menampilkan pendapatan setiap cabang jika semua bunga habis terjual. <br>``
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/38c3e5eb-6185-4fe2-a4a5-2e831bb68092)
-`` 2.a  fungsi untuk mengetahui jumlah Stock setiap jenis bunga pada cabang royalgarden 4 ``<br>
+`` 2.a  fungsi untuk mengetahui jumlah Stock setiap jenis bunga pada cabang royalgarden 4 <br> ``
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/14763a15-b2c2-423c-88a6-e6604283aba5)
-`` 2.b Jika terdapat informasi tambahan berupa pengurangan stock karena bunga tersebut mati.Dengan rincian Aglonema -1, Keladi -2, Alocasia -0, Mawar -5.`` <br>
+`` 2.b Jika terdapat informasi tambahan berupa pengurangan stock karena bunga tersebut mati.Dengan rincian Aglonema -1, Keladi -2, Alocasia -0, Mawar -5. <br>``
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/6d6e70f0-71ee-4092-9806-f09f67e8839e)
 
 
