@@ -382,7 +382,7 @@ public class Tugas1_27 {
 
 
 ### **3.2 Pertanyaan**
-``Buat program untuk menghitung rumus kecepatan, jarak, dan waktu``
+``Buat program untuk menghitung rumus kecepatan, jarak, dan waktu``<br>
 `` Program yang dibuat memiliki fungsi sebagai berikut: ``
 ``a. Menu (Untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)``
 ``b. Menghitung hasil perhitungan Kecepatan``
