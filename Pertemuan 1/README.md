@@ -4,8 +4,8 @@
 
 <p align="center">
  
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/9cc35545-a8ad-4dbd-aa2c-8fd11c2fb3f0)
-img src="./docs/LogoPolinema.png" alt="Your Image Description"
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/82948574-8b73-4e17-be0a-4fd3d9c857bf)
+
 
 
 </p>
