@@ -104,8 +104,7 @@ public class ArrayObjects_26 {
 ### **3.3.2 Verifikasi Hasil Percobaan**
 ![alt text](image.png)
 
-### **3.2.3 Pertanyaan**
-
+### **3.3.3 Pertanyaan**
 
 ```1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?```
 
@@ -121,3 +120,66 @@ phArray[5].sisi = 20;
 ```4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!```
 
 ```5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !```
+
+## **3.4 Percobaan 3: Penambahan Operasi Matematika di Dalam Method**
+### **3.4.1 Langkah-langkah Percobaan**
+``` java
+package ArrayBalok;
+
+public class ArrayBalok {
+
+    public static void main(String[] args) {
+        Balok_26 blArray[] = new Balok_26[3];
+
+        blArray[0] = new Balok_26(100, 30, 12);
+        blArray[1] = new Balok_26(120, 40, 15);
+        blArray[2] = new Balok_26(210, 50, 25);
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Volume Balok ke " + i + ": " + blArray[i].hitungVolume());
+        }
+    }
+
+}
+```
+``` java
+package ArrayBalok;
+
+public class Balok_26 {
+    public int panjang;
+    public int lebar;
+    public int tinggi;
+
+    public Balok_26(int p, int l, int t) {
+        panjang = p;
+        lebar = l;
+        tinggi = t;
+    }
+
+    public int hitungVolume() {
+        return panjang * lebar * tinggi;
+    }
+}
+```
+### **3.4.2 Verifikasi Hasil Percobaan**
+![alt text](image-1.png)
+
+### **3.4.3 Pertanyaan**
+
+```1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!```
+```2. Jika diketahui terdapat class Segitiga seperti berikut ini:, Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi. ```
+``` java
+public class Segitiga{
+    public int alas;
+    public int tinggi;
+}
+```
+```3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring) ```
+```4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:```
+```sgArray ke-0 alas: 10, tinggi: 4 ```
+```sgArray ke-1 alas: 20, tinggi: 10```
+```sgArray ke-2 alas: 15, tinggi: 6```
+```sgArray ke-3 alas: 25, tinggi: 10```
+```5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().```
+
+## **3.5 Latihan Praktikum**
