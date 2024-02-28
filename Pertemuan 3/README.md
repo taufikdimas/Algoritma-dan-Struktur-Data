@@ -53,8 +53,17 @@ public class ArrayObjects_26 {
 }
 ```
 ### **3.2.2 Verifikasi Hasil Percobaan**
-![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/35fc024b-44b1-4216-879b-0cb8d1ccae10)
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/560841d9-510f-406f-9d6b-593b3b527a48)
 
 ### **3.2.3 Pertanyaan**
-```1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
-atribut dan sekaligus method?Jelaskan!```
+```1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method?Jelaskan!```
+```2. Apakah class PersegiPanjang memiliki konstruktor?Jika tidak, kenapa dilakukan pemanggilan konstruktur pada baris program berikut :````
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/11af761b-7348-438f-95ff-23bdfa7c1070)
+```3. Apa yang dimaksud dengan kode berikut ini:````
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/eb0408de-86f3-4438-8bbc-6e042bc8963e)
+```4. Apa yang dimaksud dengan kode berikut ini:```
+```java
+ ppArray[1] = new PersegiPanjang_26();
+        ppArray[1].panjang = 80;
+        ppArray[1].lebar = 40;
+```
