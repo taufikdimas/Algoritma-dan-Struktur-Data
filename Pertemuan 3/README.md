@@ -117,8 +117,39 @@ public class ArrayObjects_26 {
 ### **3.3.3 Pertanyaan**
 
 ```1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?```
+**Jawaban :**
+*Ya, Array Of Objek dapat diimplementasikan pada array 2 Dimensi*<br>
 
 ```2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!```
+**Jawaban :**
+*berikut contoh array 2 dimensi yang elemennya array of objek*<br>
+``` java
+import java.util.Scanner;
+
+public class ArrayObjects_26 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        PersegiPanjang_26[][] ppArray = new PersegiPanjang_26[2][2];
+        for (int i = 0; i < ppArray.length; i++) {
+            for (int j = 0; j < ppArray[i].length; j++) {
+                ppArray[i][j] = new PersegiPanjang_26();
+                System.out.println("Persegi panjang baris ke-" + i + ", kolom ke-" + j);
+                System.out.print("Masukkan panjang: ");
+                ppArray[i][j].panjang = sc.nextInt();
+                System.out.print("Masukkan lebar: ");
+                ppArray[i][j].lebar = sc.nextInt();
+            }
+        }
+
+        for (int i = 0; i < ppArray.length; i++) {
+            for (int j = 0; j < ppArray[i].length; j++) {
+                System.out.println("Persegi panjang baris ke-" + i + ", kolom ke-" + j);
+                System.out.println("Panjang: " + ppArray[i][j].panjang + ", Lebar: " + ppArray[i][j].lebar);
+            }
+        }
+    }
+}
+```
 
 ```3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode dibawah ini akan memunculkan error saat dijalankan. Mengapa?```
 
