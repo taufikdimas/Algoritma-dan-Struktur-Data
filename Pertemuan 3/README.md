@@ -74,3 +74,33 @@ PersegiPanjang_26[] ppArray = new PersegiPanjang_26[3];
         ppArray[1].panjang = 80;
         ppArray[1].lebar = 40;
 ```
+
+## **3.3 Percobaan 2: Menerima Input Isian Array Menggunakan Looping**
+### **3.3.1 Langkah-langkah Percobaan**
+``` java
+import java.util.Scanner;
+
+public class ArrayObjects_26 {
+    public static void main(String[] args) {
+        PersegiPanjang_26[] ppArray = new PersegiPanjang_26[3];
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; i++) {
+            ppArray[i] = new PersegiPanjang_26();
+            System.out.println("Persegi Panjang ke-" + i);
+            System.out.print("Masukkan panjang: ");
+            ppArray[i].panjang = sc.nextInt();
+            System.out.print("Masukkan lebar: ");
+            ppArray[i].lebar = sc.nextInt();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Persegi Panjang ke-" + i);
+            System.out.println("Panjang: " + ppArray[i].panjang + ", Lebar: " + ppArray[i].lebar);
+        }
+    }
+}
+```
+### **3.3.2 Verifikasi Hasil Percobaan**
+![alt text](image.png)
+
