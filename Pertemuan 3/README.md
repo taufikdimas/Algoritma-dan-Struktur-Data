@@ -376,16 +376,6 @@ public class mahasiswa_26 {
             sc.nextLine();
         }
 
-        // Tampilkan data mahasiswa
-        System.out.println("\n\nData Mahasiswa");
-        for (int i = 0; i < 3; i++) {
-            System.out.println("---------------------");
-            System.out.println("Nama: " + nama[i]);
-            System.out.println("NIM: " + nim[i]);
-            System.out.println("Jenis Kelamin: " + jenisKelamin[i]);
-            System.out.println("IPK: " + ipk[i]);
-        }
-
         // Hitung rata-rata
         double rataRataIPK = hitungRataRataIPK(ipk);
 
@@ -452,3 +442,4 @@ public class mahasiswa_26 {
 }
 ```
 ### ** Verifikasi Hasil Percobaan**
+![alt text](image-4.png)
