@@ -57,26 +57,32 @@ public class ArrayObjects_26 {
 
 ### **3.2.3 Pertanyaan**
 ```1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method?Jelaskan!```<br>
-** Jawaban : **
+**Jawaban :**
  Tidak harus, adanya atribut dan method bergantung pada kebutuhan program  <br>
 ```2. Apakah class PersegiPanjang memiliki konstruktor?Jika tidak, kenapa dilakukan pemanggilan konstruktur pada baris program berikut :```
 ``` java
 ppArray[1] = new PersegiPanjang_26();
 ```
-** Jawaban **
+**Jawaban**
 Ya, Pemanggilan baris tersebut akan memanggil konstruktor default dari class PersegiPanjang_26 <br>
 
 ```3. Apa yang dimaksud dengan kode berikut ini:```
 ``` java
 PersegiPanjang_26[] ppArray = new PersegiPanjang_26[3];
 ```
-
+**Jawaban :**
+Kode tersebut mendeklarasi dan menginisialisasi array of objek dengan 3 elemen yang dapat menampung objek dari class PersegiPanjang<br>
 ```4. Apa yang dimaksud dengan kode berikut ini:```<br>
 ```java
  ppArray[1] = new PersegiPanjang_26();
         ppArray[1].panjang = 80;
         ppArray[1].lebar = 40;
 ```
+**Jawaban :**
+Kode tersebut membuat objek baru (new persegi panjang), memberi nilai atribut (  ppArray[1].panjang = 80;), dan menyimpan objek dalam array (ppArray[1])<br>
+```5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2?```<br>
+**Jawaban**
+pemisahan kedua class tersebut membuat lebih fleksibel dalam mengembangkan program dan di jobsheet nya diminta seperti itu.<br>
 
 ## **3.3 Percobaan 2: Menerima Input Isian Array Menggunakan Looping**
 ### **3.3.1 Langkah-langkah Percobaan**
