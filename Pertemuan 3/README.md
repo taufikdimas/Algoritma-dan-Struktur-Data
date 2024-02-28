@@ -57,17 +57,19 @@ public class ArrayObjects_26 {
 
 ### **3.2.3 Pertanyaan**
 ```1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method?Jelaskan!```<br>
+
 ```2. Apakah class PersegiPanjang memiliki konstruktor?Jika tidak, kenapa dilakukan pemanggilan konstruktur pada baris program berikut :```
 ``` java
 ppArray[1] = new PersegiPanjang_26();
 ```
-```3. Apa yang dimaksud dengan kode berikut ini:
-```
+
+```3. Apa yang dimaksud dengan kode berikut ini:```
+
 ``` java
 PersegiPanjang_26[] ppArray = new PersegiPanjang_26[3];
 ```
-```4. Apa yang dimaksud dengan kode berikut ini:
-```<br>
+
+```4. Apa yang dimaksud dengan kode berikut ini:```<br>
 ```java
  ppArray[1] = new PersegiPanjang_26();
         ppArray[1].panjang = 80;
