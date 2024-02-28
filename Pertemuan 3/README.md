@@ -118,11 +118,11 @@ public class ArrayObjects_26 {
 
 ```1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?```
 **Jawaban :**
-*Ya, Array Of Objek dapat diimplementasikan pada array 2 Dimensi*<br>
+Ya, Array Of Objek dapat diimplementasikan pada array 2 Dimensi<br>
 
 ```2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!```
 **Jawaban :**
-*berikut contoh array 2 dimensi yang elemennya array of objek*<br>
+berikut contoh array 2 dimensi yang elemennya array of objek<br>
 ``` java
 import java.util.Scanner;
 
@@ -157,6 +157,8 @@ public class ArrayObjects_26 {
 Persegi[] pgArray = new Persegi[100];
 phArray[5].sisi = 20;
  ```
+**Jawaban :**
+Terjadi error karena variabel ```phArray``` tidak dinisialisasi dengan array of objek '''persegi'''<br>
 
 ```4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!```
 
