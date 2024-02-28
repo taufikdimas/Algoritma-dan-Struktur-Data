@@ -64,7 +64,6 @@ ppArray[1] = new PersegiPanjang_26();
 ```
 
 ```3. Apa yang dimaksud dengan kode berikut ini:```
-
 ``` java
 PersegiPanjang_26[] ppArray = new PersegiPanjang_26[3];
 ```
