@@ -104,3 +104,20 @@ public class ArrayObjects_26 {
 ### **3.3.2 Verifikasi Hasil Percobaan**
 ![alt text](image.png)
 
+### **3.2.3 Pertanyaan**
+
+
+```1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?```
+
+```2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!```
+
+```3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode dibawah ini akan memunculkan error saat dijalankan. Mengapa?```
+
+``` java
+Persegi[] pgArray = new Persegi[100];
+phArray[5].sisi = 20;
+ ```
+
+```4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!```
+
+```5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !```
