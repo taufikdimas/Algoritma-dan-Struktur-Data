@@ -102,7 +102,8 @@ public class ArrayObjects_26 {
 }
 ```
 ### **3.3.2 Verifikasi Hasil Percobaan**
-![alt text](image.png)
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/60875076-4ac5-4d1f-9fa9-058726754157)
+
 
 ### **3.3.3 Pertanyaan**
 
@@ -162,7 +163,8 @@ public class Balok_26 {
 }
 ```
 ### **3.4.2 Verifikasi Hasil Percobaan**
-![alt text](image-1.png)
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/326c6120-88d5-4826-8a56-b6fdf23b0f13)
+
 
 ### **3.4.3 Pertanyaan**
 
@@ -299,7 +301,8 @@ public class Main {
 }
 ```
 ### ** Verifikasi Hasil Percobaan**
-![alt text](image-2.png)
+![image-2](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/c0c28a84-9496-4730-8cf4-a01742d04017)
+
 
 ### **2. program untuk menampilkan informasi mahasiswa berupa nama, nim, jenis kelamin dan juga IPK mahasiswa**
 ```Kode Program ```
@@ -345,7 +348,8 @@ public class mahasiswa_26 {
 ```
 
 ### ** Verifikasi Hasil Percobaan**
-![alt text](image-3.png)
+![image-3](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/72182c24-302f-49ac-974e-c60128ec214f)
+
 
 ### **2. program untuk menampilkan informasi mahasiswa berupa nama, nim, jenis kelamin dan juga IPK mahasiswa**
 ``` java
@@ -442,4 +446,4 @@ public class mahasiswa_26 {
 }
 ```
 ### ** Verifikasi Hasil Percobaan**
-![alt text](image-4.png)
+![image-4](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/a876c410-c574-4b9a-a886-3e5779188efe)
