@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Input untuk Kerucut
+        // Input Kerucut
         System.out.print("Masukkan jari-jari kerucut: ");
         double jariJari = sc.nextDouble();
         System.out.print("Masukkan sisi miring kerucut: ");
@@ -14,7 +14,7 @@ public class Main {
 
         Kerucut_26 kerucut = new Kerucut_26(jariJari, sisiMiring);
 
-        // Input untuk Limas Segi Empat
+        // Input Limas Segi Empat
         System.out.print("Masukkan panjang sisi alas limas segi empat: ");
         double panjangSisiAlas = sc.nextDouble();
         System.out.print("Masukkan tinggi limas segi empat: ");
@@ -22,13 +22,13 @@ public class Main {
 
         limasSegiEmpat_26 limas = new limasSegiEmpat_26(panjangSisiAlas, tinggiLimas);
 
-        // Input untuk Bola
+        // Input Bola
         System.out.print("Masukkan jari-jari bola: ");
         double jariJariB = sc.nextDouble();
 
         Bola_26 bola = new Bola_26(jariJariB);
 
-        // Menampilkan hasil perhitungan
+        // hasil perhitungan
         System.out.println("Luas Permukaan dan Volume Kerucut:");
         System.out.println("Luas Permukaan: " + Math.round(kerucut.LuasPermukaan()));
         System.out.println("Volume: " + Math.round(kerucut.Volume()));

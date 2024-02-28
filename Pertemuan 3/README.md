@@ -167,19 +167,138 @@ public class Balok_26 {
 ### **3.4.3 Pertanyaan**
 
 ```1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!```
-```2. Jika diketahui terdapat class Segitiga seperti berikut ini:, Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi. ```
+```2. Jika diketahui terdapat class Segitiga seperti berikut ini:Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi. ```
 ``` java
 public class Segitiga{
     public int alas;
     public int tinggi;
 }
 ```
-```3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring) ```
-```4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:```
-```sgArray ke-0 alas: 10, tinggi: 4 ```
-```sgArray ke-1 alas: 20, tinggi: 10```
-```sgArray ke-2 alas: 15, tinggi: 6```
-```sgArray ke-3 alas: 25, tinggi: 10```
-```5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().```
+```3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring) ```<br>
+```4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:```<br>
+```sgArray ke-0 alas: 10, tinggi: 4 ```<br>
+```sgArray ke-1 alas: 20, tinggi: 10```<br>
+```sgArray ke-2 alas: 15, tinggi: 6```<br>
+```sgArray ke-3 alas: 25, tinggi: 10```<br>
+```5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().```<br>
 
 ## **3.5 Latihan Praktikum**
+### **1. Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut, limas segi empat sama sisi, dan bola**
+```class Kerucut```
+``` java 
+package BangunRuang;
+
+public class Kerucut_26 {
+    public double jariJari;
+    public double sisiMiring;
+
+    public Kerucut_26(double jariJari, double sisiMiring) {
+        this.jariJari = jariJari;
+        this.sisiMiring = sisiMiring;
+    }
+
+    public double LuasPermukaan() {
+        return Math.PI * jariJari * (jariJari + sisiMiring);
+    }
+
+    public double Volume() {
+        return (Math.PI * jariJari * jariJari * sisiMiring) / 3;
+    }
+}
+```
+```class limas Segi Empat Sama Sisi```
+``` java 
+package BangunRuang;
+
+public class limasSegiEmpat_26 {
+    double panjangSisiAlas;
+    double tinggiLimas;
+
+    public limasSegiEmpat_26(double panjangSisiAlas, double tinggiLimas) {
+        this.panjangSisiAlas = panjangSisiAlas;
+        this.tinggiLimas = tinggiLimas;
+    }
+
+    double hitungLuasPermukaan() {
+        return panjangSisiAlas * panjangSisiAlas + 4 * (0.5 * panjangSisiAlas * tinggiLimas);
+    }
+
+    double hitungVolume() {
+        return (panjangSisiAlas * panjangSisiAlas * tinggiLimas) / 3;
+    }
+}
+```
+```class Bola```
+``` java
+package BangunRuang;
+
+public class Bola_26 {
+    double jariJariB;
+
+    public Bola_26(double jariJari) {
+        this.jariJariB = jariJari;
+    }
+
+    public double hitungLuasPermukaan() {
+        return 4 * Math.PI * Math.pow(jariJariB, 2);
+    }
+
+    public double hitungVolume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(jariJariB, 3);
+    }
+
+}
+```
+```main Bangun Ruang```
+``` java
+package BangunRuang;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input Kerucut
+        System.out.print("Masukkan jari-jari kerucut: ");
+        double jariJari = sc.nextDouble();
+        System.out.print("Masukkan sisi miring kerucut: ");
+        double sisiMiring = sc.nextDouble();
+
+        Kerucut_26 kerucut = new Kerucut_26(jariJari, sisiMiring);
+
+        // Input Limas Segi Empat
+        System.out.print("Masukkan panjang sisi alas limas segi empat: ");
+        double panjangSisiAlas = sc.nextDouble();
+        System.out.print("Masukkan tinggi limas segi empat: ");
+        double tinggiLimas = sc.nextDouble();
+
+        limasSegiEmpat_26 limas = new limasSegiEmpat_26(panjangSisiAlas, tinggiLimas);
+
+        // Input Bola
+        System.out.print("Masukkan jari-jari bola: ");
+        double jariJariB = sc.nextDouble();
+
+        Bola_26 bola = new Bola_26(jariJariB);
+
+        //hasil perhitungan
+        System.out.println("Luas Permukaan dan Volume Kerucut:");
+        System.out.println("Luas Permukaan: " + Math.round(kerucut.LuasPermukaan()));
+        System.out.println("Volume: " + Math.round(kerucut.Volume()));
+
+        System.out.println("\nLuas Permukaan dan Volume Limas Segi Empat:");
+        System.out.println("Luas Permukaan: " + Math.round(limas.hitungLuasPermukaan()));
+        System.out.println("Volume: " + Math.round(limas.hitungVolume()));
+
+        System.out.println("\nLuas Permukaan dan Volume Bola:");
+        System.out.println("Luas Permukaan: " + Math.round(bola.hitungLuasPermukaan()));
+        System.out.println("Volume: " + Math.round(bola.hitungVolume()));
+
+        sc.close();
+    }
+}
+```
+### ** Verifikasi Hasil Percobaan**
+![alt text](image-2.png)
+
+### **2. program untuk menampilkan informasi mahasiswa berupa nama, nim, jenis kelamin dan juga IPK mahasiswa**
