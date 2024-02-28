@@ -161,8 +161,35 @@ phArray[5].sisi = 20;
 Terjadi error karena variabel ```phArray``` tidak dinisialisasi dengan array of objek '''persegi''' <br>
 
 ```4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!```
+**Jawaban :**
+``` java
+import java.util.Scanner;
 
+public class ArrayObjects_26 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //input panjang array
+        System.out.print("Masukkan jumlah Persegi Panjang : ");
+        PersegiPanjang_26[] ppArray = new PersegiPanjang_26[sc.nextInt()];
+
+        for (int i = 0; i < 3; i++) {
+            ppArray[i] = new PersegiPanjang_26();
+            System.out.println("Persegi Panjang ke-" + i);
+            System.out.print("Masukkan Panjang : ");
+            ppArray[i].panjang = sc.nextInt();
+            System.out.print("Masukkan Lebar : ");
+            ppArray[i].lebar = sc.nextInt();
+        }
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Persegi Panjang ke-" + i);
+            System.out.println("Panjang : " + ppArray[i].panjang + ", Lebar : " + ppArray[i].lebar);
+        }
+    }
+}
+```
 ```5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !```
+**Jawaban :**
+Tidak dianjurkan Jika terjadi duplikasi instansiasi array of objek pada ```ppArray[i]``` sekaligus ```ppArray[0]``` dapat menyebabkan ketidakjelasan/kesalahan logika ketika  diinisialisasi dengan objek yang sama, maka perubahan pada salah satu objek akan memengaruhi objek lainnya.<br>
 
 ## **3.4 Percobaan 3: Penambahan Operasi Matematika di Dalam Method**
 ### **3.4.1 Langkah-langkah Percobaan**
@@ -211,6 +238,8 @@ public class Balok_26 {
 ### **3.4.3 Pertanyaan**
 
 ```1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!```
+**Jawaban :**
+
 ```2. Jika diketahui terdapat class Segitiga seperti berikut ini:Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi. ```
 ``` java
 public class Segitiga{
