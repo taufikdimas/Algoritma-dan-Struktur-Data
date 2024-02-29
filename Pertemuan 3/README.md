@@ -237,8 +237,33 @@ public class Balok_26 {
 
 ### **3.4.3 Pertanyaan**
 
-```1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!```
+```1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!```<br>
 **Jawaban :**
+Bisa, dalam java terdapat konsep overloading kontruktor yang memungkinkan suatu class memiliki beberapa konstruktor dengan nama yang sama tetapi parameter berbeda. contoh <br>
+``` java
+public class Konstruktor {
+
+    public int sisi;
+
+    public Konstruktor(int sisi) {
+        this.sisi = sisi;
+    }
+
+    public Konstruktor() {
+        this.sisi = 1;
+    }
+
+    public static void main(String[] args) {
+
+        Konstruktor Persegi1 = new Konstruktor(5);
+        Konstruktor Persegi2 = new Konstruktor();
+
+        System.out.println("Persegi 1 :" + Persegi1.sisi);
+        System.out.println("Persegi 2 :" + Persegi2.sisi);
+
+    }
+}
+```
 
 ```2. Jika diketahui terdapat class Segitiga seperti berikut ini:Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi. ```
 ``` java
