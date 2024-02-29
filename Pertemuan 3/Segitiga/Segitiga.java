@@ -6,11 +6,12 @@ public class Segitiga {
 
     public Segitiga(int a, int t) {
         this.alas = a;
+        this.tinggi = t;
 
     }
 
     public double hitungLuas() {
-        return 0.5 * alas * tinggi;
+        return alas * tinggi / 2;
     }
 
     public double hitungKeliling() {
