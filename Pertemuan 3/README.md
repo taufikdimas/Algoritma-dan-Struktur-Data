@@ -272,13 +272,63 @@ public class Segitiga{
     public int tinggi;
 }
 ```
+**Jawaban :**
+``` java
+package Segitiga;
+
+public class Segitiga {
+    public int alas;
+    public int tinggi;
+
+    public Segitiga(int a, int t) {
+        this.alas = a;
+        this.tinggi = t;
+        
+    }
+}
+```
 ```3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring) ```<br>
+**Jawaban :0**
+``` java
+public double hitungLuas() {
+        return 0.5 * alas * tinggi;
+    }
+
+    public double hitungKeliling() {
+        double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
+        return alas + tinggi + sisiMiring;
+    }
+```
 ```4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:```<br>
 ```sgArray ke-0 alas: 10, tinggi: 4 ```<br>
 ```sgArray ke-1 alas: 20, tinggi: 10```<br>
 ```sgArray ke-2 alas: 15, tinggi: 6```<br>
 ```sgArray ke-3 alas: 25, tinggi: 10```<br>
+**Jawaban :**
+``` java
+package Segitiga;
+
+public class mainSegitiga {
+    public static void main(String[] args) {
+        Segitiga[] sgArray = new Segitiga[4];
+        sgArray[0] = new Segitiga(10, 4);
+        sgArray[1] = new Segitiga(20, 10);
+        sgArray[2] = new Segitiga(15, 6);
+        sgArray[3] = new Segitiga(25, 10);
+    }
+}
+```
 ```5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().```<br>
+**jawaban :**
+``` java
+ for (int i = 0; i < sgArray.length; i++) {
+            System.out.println("Luas segitiga ke-" + (i + 1) + ": " + sgArray[i].hitungLuas());
+            System.out.println("Keliling segitiga ke-" + (i + 1) + ": " + sgArray[i].hitungKeliling());
+        }
+```
+**Verifikasi kode program**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/91ffc644-d0d9-4f3c-aa4c-d348f2aabb26)
+
 
 ## **3.5 Latihan Praktikum**
 ### **1. Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut, limas segi empat sama sisi, dan bola**
