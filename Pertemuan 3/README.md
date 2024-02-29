@@ -288,7 +288,7 @@ public class Segitiga {
 }
 ```
 ```3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring) ```<br>
-**Jawaban :0**
+**Jawaban :**
 ``` java
 public double hitungLuas() {
         return 0.5 * alas * tinggi;
@@ -326,7 +326,7 @@ public class mainSegitiga {
             System.out.println("Keliling segitiga ke-" + (i + 1) + ": " + sgArray[i].hitungKeliling());
         }
 ```
-**Verifikasi kode program**
+**Verifikasi kode program**<br>
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/91ffc644-d0d9-4f3c-aa4c-d348f2aabb26)
 
 
