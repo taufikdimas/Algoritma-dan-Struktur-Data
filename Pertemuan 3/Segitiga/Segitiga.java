@@ -8,4 +8,13 @@ public class Segitiga {
         this.alas = a;
 
     }
+
+    public double hitungLuas() {
+        return 0.5 * alas * tinggi;
+    }
+
+    public double hitungKeliling() {
+        double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
+        return alas + tinggi + sisiMiring;
+    }
 }
