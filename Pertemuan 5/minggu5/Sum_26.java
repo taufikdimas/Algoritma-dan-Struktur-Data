@@ -18,14 +18,15 @@ public class Sum_26 {
     }
 
     double totalDC(double arr[], int l, int r) {
-        if (l == r) {
+        if (l > r) {
+            return 0;
+        } else if (l == r) {
             return arr[l];
-        } else if (l < r) {
+        } else {
             int mid = (l + r) / 2;
             double lsum = totalDC(arr, l, mid);
             double rsum = totalDC(arr, mid + 1, r);
             return lsum + rsum;
         }
-        return 0;
     }
 }
