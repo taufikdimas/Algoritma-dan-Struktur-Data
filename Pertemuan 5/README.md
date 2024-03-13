@@ -262,9 +262,9 @@ perusahaan.(Setiap perusahaan bisa saja memiliki jumlah bulan berbeda-beda)? Buk
 dengan program!
 
 ## **4.5 Latihan Pratikum**
-a) top_acceleration tertinggi menggunakan Divide and Conquer!
-b) top_acceleration terendah menggunakan Divide and Conquer!
-c) Rata-rata top_power dari seluruh mobil menggunakan Brute Force!
+a) top_acceleration tertinggi menggunakan Divide and Conquer! <br>
+b) top_acceleration terendah menggunakan Divide and Conquer! <br>
+c) Rata-rata top_power dari seluruh mobil menggunakan Brute Force! <br>
 
 
 
