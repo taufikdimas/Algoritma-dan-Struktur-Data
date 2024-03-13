@@ -8,7 +8,7 @@ public class Pangkat_26 {
         this.pangkat = pangkat;
     }
 
-    int pangkatBF(int a, int n) {
+    public int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
             hasil *= a;
