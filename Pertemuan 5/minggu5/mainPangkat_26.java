@@ -11,7 +11,7 @@ public class mainPangkat_26 {
 
         Pangkat_26[] png = new Pangkat_26[elemen];
         for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat_26();
+            png[i] = new Pangkat_26(2, 5);// modifikasi menggunakan konstruktor
             System.out.print("Masukkan nilai yang hendak dipangkatkan : ");
             png[i].nilai = sc26.nextInt();
             System.out.print("Masukkan nilai pangkat : ");

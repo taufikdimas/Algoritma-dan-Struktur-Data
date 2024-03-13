@@ -3,6 +3,11 @@ package minggu5;
 public class Pangkat_26 {
     public int nilai, pangkat;
 
+    public Pangkat_26(int nilai, int pangkat) {// modisikasi menggunakan kosntruktor
+        this.nilai = nilai;
+        this.pangkat = pangkat;
+    }
+
     int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n; i++) {
