@@ -94,10 +94,23 @@ public class mainFaktorial_26 {
 
 1. Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan
 perbedaan bagian kode pada penggunaan if dan else!
-2. Apakah memungkinkan perulangan pada method faktorialBF() dirubah selain menggunakan
+```perbedaan antara keduanya berada pada kondisi dan hasil yang dikembalikan. Kode if digunakan untuk memeriksa apakah nilai n sama dengan 0 atau 1, sedangkan kode else memastikan jika n tidak sama dengan 0 atau 1```
+3. Apakah memungkinkan perulangan pada method faktorialBF() dirubah selain menggunakan
 for?Buktikan!
-3. Jelaskan perbedaan antara fakto *= i; dan int fakto = n * faktorialDC(n-1); !
-
+```selain menggunakan for perulangan pada method faktorialBF() dapat menggunakan perulangan while ```
+``` java
+int faktorialBF(int n) {
+        int fakto = 1;
+        int i = 1;
+        while (i <= n) {
+            fakto = fakto * i;
+            i++;
+        }
+        return fakto;
+    }
+```
+5. Jelaskan perbedaan antara fakto *= i; dan int fakto = n * faktorialDC(n-1); !
+```fakto *= i; digunakan untuk menghitung nilai faktorial dengan menggunakan perulangan, sedangkan int fakto = n * faktorialDC(n-1); digunakan untuk menghitung faktorial menggunakan rekursi```
 
 ### **4.3 Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide and Conquer**
 ### **4.3.1 Langkah-langkah Percobaan**
