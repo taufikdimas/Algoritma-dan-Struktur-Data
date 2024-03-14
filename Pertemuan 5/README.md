@@ -492,6 +492,7 @@ public class Hitung_26 {
 ```
 
 ### **4.5.2 Verifikasi Hasil Percobaan**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/2adfc3ad-c1f6-4d94-b280-768d2f9b3902)
 
 
 
