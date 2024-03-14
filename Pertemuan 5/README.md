@@ -308,7 +308,7 @@ public class Sum_26 {
             int mid = (l + r) / 2;
             double lsum = totalDC(arr, l, mid);
             double rsum = totalDC(arr, mid + 1, r);
-            return lsum + rsum;
+           return Math.round((lsum + rsum) * 100.0) / 100.0;
         }
         return 0;
     }
