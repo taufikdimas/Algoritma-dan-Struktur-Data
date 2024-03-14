@@ -89,6 +89,8 @@ public class mainFaktorial_26 {
 }
 ```
 ### **4.2.2 Verifikasi Hasil Percobaan**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/0ec5d1f3-4753-4b4c-8cc4-949e56f21430)
+
 
 ### **4.2.3 Pertanyaan**
 
@@ -182,6 +184,8 @@ public class mainPangkat_26 {
 ```
 
 ### **4.3.2 Verifikasi Hasil Percobaan**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/96c66f7e-d166-4b26-ac57-463dbb7abc16)
+
 
 ### **4.3.3 Pertanyaan**
 1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu PangkatBF() dan PangkatDC()!
@@ -346,6 +350,8 @@ public class mainSum_26 {
 ```
 
 ### **4.4.2 Verifikasi Hasil Percobaan**
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/8bf2a673-68e1-4d23-becd-43fb375460ac)
+
 
 ### **4.4.3 Pertanyaan**
 1. Mengapa terdapat formulasi return value berikut?Jelaskan!<br>
@@ -396,7 +402,7 @@ a) top_acceleration tertinggi menggunakan Divide and Conquer! <br>
 b) top_acceleration terendah menggunakan Divide and Conquer! <br>
 c) Rata-rata top_power dari seluruh mobil menggunakan Brute Force! <br>
 
-
+### ***4.5.1 Langkah-langkah Percobaan**
 ``` java
 package Showroom;
 
@@ -485,6 +491,7 @@ public class Hitung_26 {
 }
 ```
 
+### **4.5.2 Verifikasi Hasil Percobaan**
 
 
 
