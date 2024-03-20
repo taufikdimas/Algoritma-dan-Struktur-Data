@@ -140,7 +140,7 @@ public class DaftarMahasiswaBerprestasi_26 {
 
 ### **5.2.3 Pertanyaan**
 1. Terdapat di method apakah proses bubble sort?<br>
-   ``` Proses Bubble Sort terdapat dalam method bubbleSort() dalam kelas DaftarMahasiswaBerprestasi_26```
+   ``` Proses Bubble Sort terdapat dalam method bubbleSort() dalam kelas DaftarMahasiswaBerprestasi_26```<br>
 2. Di dalam method bubbleSort(), terdapat baris program seperti di bawah ini:<br>
 ``` java
 if (listMhs[j].ipk < listMhs[j + 1].ipk) {
