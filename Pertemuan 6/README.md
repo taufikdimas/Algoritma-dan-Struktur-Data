@@ -150,18 +150,18 @@ if (listMhs[j].ipk < listMhs[j + 1].ipk) {
                 }
 ```
    Untuk apakah proses tersebut?<br>
- ```  untuk pertukaran posisi dua elemen dalam array jika nilai IPK dari elemen saat ini lebih kecil daripada nilai IPK dari elemen berikutnya```
+ ```  untuk pertukaran posisi dua elemen dalam array jika nilai IPK dari elemen saat ini lebih kecil daripada nilai IPK dari elemen berikutnya```<br>
  3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:<br>
  ``` java
         for (int i = 0; i < listMhs.length - 1; i++) {
             for (int j = 0; j < listMhs.length - i - 1; j++) {
 ```
 a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j?<br>
- ```  Perulangan i digunakan untuk mengatur jumlah tahap dalam algoritma Bubble Sort, sedangkan perulangan j digunakan untuk membandingkan elemen-elemen dalam array pada setiap tahap.```
+ ```  Perulangan i digunakan untuk mengatur jumlah tahap dalam algoritma Bubble Sort, sedangkan perulangan j digunakan untuk membandingkan elemen-elemen dalam array pada setiap tahap.```<br>
 b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?<br>
- ``` Syarat i < listMhs.length - 1 karena iterasi terakhir tidak perlu membandingkan elemen yang sudah terurut sebelumnya.```
+ ``` Syarat i < listMhs.length - 1 karena iterasi terakhir tidak perlu membandingkan elemen yang sudah terurut sebelumnya.```<br>
 c. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?<br>
- ```  Syarat j < listMhs.length - i karena pada setiap tahap, elemen terbesar yang sudah terurut tidak perlu dibandingkan lagi.```
+ ```  Syarat j < listMhs.length - i karena pada setiap tahap, elemen terbesar yang sudah terurut tidak perlu dibandingkan lagi.```<br>
 d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?<br>
  ``` Jika banyak data adalah 50, perulangan i akan berlangsung sebanyak 49 kali. Terdapat 49 tahap dalam Bubble Sort karena setiap iterasi i memindahkan satu elemen terbesar ke posisi akhir, sehingga elemen terakhir akan otomatis terurut setelah 49 iterasi.```
 
@@ -204,7 +204,7 @@ int idxMin = i;
 ```
 
 Untuk apakah proses tersebut, jelaskan!<br>
-``` Proses tersebut adalah pencarian indeks dari elemen dengan nilai IPK terkecil di dalam array listMhs mulai dari indeks i hingga indeks terakhir. Tujuannya adalah untuk menemukan elemen terkecil yang akan diposisikan pada tempat yang tepat setelah iterasi saat ini berakhir dalam algoritma Selection Sort.```
+``` Proses tersebut adalah pencarian indeks dari elemen dengan nilai IPK terkecil di dalam array listMhs mulai dari indeks i hingga indeks terakhir. Tujuannya adalah untuk menemukan elemen terkecil yang akan diposisikan pada tempat yang tepat setelah iterasi saat ini berakhir dalam algoritma Selection Sort.```<br>
 
  ## **5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort**
 ### **5.4.1 Langkah-langkah Percobaan**
