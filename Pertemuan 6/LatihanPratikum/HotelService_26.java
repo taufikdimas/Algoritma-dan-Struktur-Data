@@ -1,15 +1,15 @@
 package LatihanPratikum;
 
-public class HotelService {
-    private Hotel[] rooms;
+public class HotelService_26 {
+    private Hotel_26[] rooms;
     private int size;
 
-    public HotelService(int kapasitas) {
-        rooms = new Hotel[kapasitas];
+    public HotelService_26(int kapasitas) {
+        rooms = new Hotel_26[kapasitas];
         size = 0;
     }
 
-    public void tambah(Hotel H) {
+    public void tambah(Hotel_26 H) {
         if (size < rooms.length) {
             rooms[size++] = H;
         } else {
@@ -29,7 +29,7 @@ public class HotelService {
             for (int j = 0; j < size - i - 1; j++) {
                 if (rooms[j].getHarga() > rooms[j + 1].getHarga()) {
                     // swap
-                    Hotel temp = rooms[j];
+                    Hotel_26 temp = rooms[j];
                     rooms[j] = rooms[j + 1];
                     rooms[j + 1] = temp;
                 }
@@ -47,7 +47,7 @@ public class HotelService {
                 }
             }
             // swap
-            Hotel temp = rooms[minIndex];
+            Hotel_26 temp = rooms[minIndex];
             rooms[minIndex] = rooms[i];
             rooms[i] = temp;
         }
@@ -63,7 +63,7 @@ public class HotelService {
                 }
             }
             // swap
-            Hotel temp = rooms[minIndex];
+            Hotel_26 temp = rooms[minIndex];
             rooms[minIndex] = rooms[i];
             rooms[i] = temp;
         }
@@ -75,7 +75,7 @@ public class HotelService {
             for (int j = 0; j < size - i - 1; j++) {
                 if (rooms[j].getBintang() < rooms[j + 1].getBintang()) {
                     // swap
-                    Hotel temp = rooms[j];
+                    Hotel_26 temp = rooms[j];
                     rooms[j] = rooms[j + 1];
                     rooms[j + 1] = temp;
                 }

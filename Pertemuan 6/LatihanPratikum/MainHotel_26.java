@@ -2,16 +2,16 @@ package LatihanPratikum;
 
 import java.util.Scanner;
 
-public class MainHotel {
+public class MainHotel_26 {
     public static void main(String[] args) {
-        HotelService hotelService = new HotelService(5);
-        hotelService.tambah(new Hotel("A", "Jakarta  ", 580000, (byte) 4));
-        hotelService.tambah(new Hotel("B", "Surabaya ", 400000, (byte) 3));
-        hotelService.tambah(new Hotel("C", "Bali     ", 600000, (byte) 5));
-        hotelService.tambah(new Hotel("D", "Malang   ", 450000, (byte) 2));
-        hotelService.tambah(new Hotel("E", "Blitar   ", 750000, (byte) 1));
+        HotelService_26 hotelService = new HotelService_26(5);
+        hotelService.tambah(new Hotel_26("A", "Jakarta  ", 580000, (byte) 4));
+        hotelService.tambah(new Hotel_26("B", "Surabaya ", 400000, (byte) 3));
+        hotelService.tambah(new Hotel_26("C", "Bali     ", 600000, (byte) 5));
+        hotelService.tambah(new Hotel_26("D", "Malang   ", 450000, (byte) 2));
+        hotelService.tambah(new Hotel_26("E", "Blitar   ", 750000, (byte) 1));
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc26 = new Scanner(System.in);
         int choice;
         do {
             System.out.println("\nPilih opsi sorting:");
@@ -19,7 +19,7 @@ public class MainHotel {
             System.out.println("2. Rating bintang (dari tertinggi ke terendah)");
             System.out.println("0. Keluar");
             System.out.print("Pilihan Anda: ");
-            choice = scanner.nextInt();
+            choice = sc26.nextInt();
 
             switch (choice) {
                 case 1:
@@ -40,6 +40,6 @@ public class MainHotel {
             }
         } while (choice != 0);
 
-        scanner.close();
+        sc26.close();
     }
 }

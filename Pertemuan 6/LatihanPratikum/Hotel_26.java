@@ -1,12 +1,12 @@
 package LatihanPratikum;
 
-public class Hotel {
+public class Hotel_26 {
     private String nama;
     private String kota;
     private int harga;
     private byte bintang;
 
-    public Hotel(String n, String k, int h, byte b) {
+    public Hotel_26(String n, String k, int h, byte b) {
         nama = n;
         kota = k;
         harga = h;
