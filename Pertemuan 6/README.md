@@ -139,9 +139,9 @@ public class DaftarMahasiswaBerprestasi_26 {
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/eefd4ed6-152d-4223-97f9-f229bb39851d)
 
 ### **5.2.3 Pertanyaan**
-1. Terdapat di method apakah proses bubble sort?
-   ``` Proses Bubble Sort terdapat dalam method bubbleSort() dalam kelas DaftarMahasiswaBerprestasi_26```
-2. Di dalam method bubbleSort(), terdapat baris program seperti di bawah ini:,
+1. Terdapat di method apakah proses bubble sort?<br>
+   ``` Proses Bubble Sort terdapat dalam method bubbleSort() dalam kelas DaftarMahasiswaBerprestasi_26```<br>
+2. Di dalam method bubbleSort(), terdapat baris program seperti di bawah ini:<br>
 ``` java
 if (listMhs[j].ipk < listMhs[j + 1].ipk) {
                     Mahasiswa_26 tmp = listMhs[j];
@@ -149,20 +149,20 @@ if (listMhs[j].ipk < listMhs[j + 1].ipk) {
                     listMhs[j + 1] = tmp;
                 }
 ```
-   Untuk apakah proses tersebut?
- ```  untuk pertukaran posisi dua elemen dalam array jika nilai IPK dari elemen saat ini lebih kecil daripada nilai IPK dari elemen berikutnya```
- 3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
+   Untuk apakah proses tersebut?<br>
+ ```  untuk pertukaran posisi dua elemen dalam array jika nilai IPK dari elemen saat ini lebih kecil daripada nilai IPK dari elemen berikutnya```<br>
+ 3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:<br>
  ``` java
         for (int i = 0; i < listMhs.length - 1; i++) {
             for (int j = 0; j < listMhs.length - i - 1; j++) {
 ```
-a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j?
- ```  Perulangan i digunakan untuk mengatur jumlah tahap dalam algoritma Bubble Sort, sedangkan perulangan j digunakan untuk membandingkan elemen-elemen dalam array pada setiap tahap.```
-b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
- ``` Syarat i < listMhs.length - 1 karena iterasi terakhir tidak perlu membandingkan elemen yang sudah terurut sebelumnya.```
-c. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?
- ```  Syarat j < listMhs.length - i karena pada setiap tahap, elemen terbesar yang sudah terurut tidak perlu dibandingkan lagi.```
-d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j?<br>
+ ```  Perulangan i digunakan untuk mengatur jumlah tahap dalam algoritma Bubble Sort, sedangkan perulangan j digunakan untuk membandingkan elemen-elemen dalam array pada setiap tahap.```<br>
+b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?<br>
+ ``` Syarat i < listMhs.length - 1 karena iterasi terakhir tidak perlu membandingkan elemen yang sudah terurut sebelumnya.```<br>
+c. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?<br>
+ ```  Syarat j < listMhs.length - i karena pada setiap tahap, elemen terbesar yang sudah terurut tidak perlu dibandingkan lagi.```<br>
+d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?<br>
  ``` Jika banyak data adalah 50, perulangan i akan berlangsung sebanyak 49 kali. Terdapat 49 tahap dalam Bubble Sort karena setiap iterasi i memindahkan satu elemen terbesar ke posisi akhir, sehingga elemen terakhir akan otomatis terurut setelah 49 iterasi.```
 
  ## **5.3 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Selection Sort**
@@ -193,7 +193,7 @@ d. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i aka
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/30cdb41e-5a18-40fc-b922-5b9349f946be)
 
 ### **5.3.3 Pertanyaan**
-Di dalam method selection sort, terdapat baris program seperti di bawah ini:
+Di dalam method selection sort, terdapat baris program seperti di bawah ini:<br>
 ``` java
 int idxMin = i;
             for (int j = i + 1; j < listMhs.length; j++) {
@@ -203,8 +203,8 @@ int idxMin = i;
             }
 ```
 
-Untuk apakah proses tersebut, jelaskan!
-``` Proses tersebut adalah pencarian indeks dari elemen dengan nilai IPK terkecil di dalam array listMhs mulai dari indeks i hingga indeks terakhir. Tujuannya adalah untuk menemukan elemen terkecil yang akan diposisikan pada tempat yang tepat setelah iterasi saat ini berakhir dalam algoritma Selection Sort.```
+Untuk apakah proses tersebut, jelaskan!<br>
+``` Proses tersebut adalah pencarian indeks dari elemen dengan nilai IPK terkecil di dalam array listMhs mulai dari indeks i hingga indeks terakhir. Tujuannya adalah untuk menemukan elemen terkecil yang akan diposisikan pada tempat yang tepat setelah iterasi saat ini berakhir dalam algoritma Selection Sort.```<br>
 
  ## **5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort**
 ### **5.4.1 Langkah-langkah Percobaan**
@@ -232,8 +232,7 @@ Untuk apakah proses tersebut, jelaskan!
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/b2d13d02-ff74-4add-9775-17f62cf71cbe)
 
 ### **5.4.3 Pertanyaan**
-Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting
-dengan cara descending.
+Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.<br>
 
 ``` java
     void insertionSort() {
