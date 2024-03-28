@@ -41,11 +41,11 @@ public class pencarianBuku26 {
 
     public void TampilkanData(int x, int pos) {
         if (pos != -1) {
-            System.out.println("Kode Buku\t : " + x);
-            System.out.println("Judul\t : " + listBK[pos].judulBuku);
-            System.out.println("Tahun Terbit\t : " + listBK[pos].tahunTerbit);
-            System.out.println("Pengarang\t : " + listBK[pos].Pengarang);
-            System.out.println("Stock\t : " + listBK[pos].stock);
+            System.out.println("Kode Buku \t: " + x);
+            System.out.println("Judul \t\t: " + listBK[pos].judulBuku);
+            System.out.println("Tahun Terbit \t: " + listBK[pos].tahunTerbit);
+            System.out.println("Pengarang \t: " + listBK[pos].Pengarang);
+            System.out.println("Stock \t\t: " + listBK[pos].stock);
         } else {
             System.out.println("Data " + x + " tidak ditemukan");
         }
@@ -53,16 +53,15 @@ public class pencarianBuku26 {
 
     // percobaan 2
     public int FindBinarySearch(int cari, int left, int right) {
-        int mid;
         if (right >= left) {
-            mid = (right) / 2;
-            if (cari == listBK[mid].kodeBuku) {
+            int mid = left + (right - left) / 2;
+            if (listBK[mid].kodeBuku == cari) {
                 return mid;
-            } else if (listBK[mid].kodeBuku > cari) {
-                return FindBinarySearch(cari, left, mid);
-            } else {
-                return FindBinarySearch(cari, mid, right);
             }
+            if (listBK[mid].kodeBuku > cari) {
+                return FindBinarySearch(cari, left, mid - 1);
+            }
+            return FindBinarySearch(cari, mid + 1, right);
         }
         return -1;
     }
