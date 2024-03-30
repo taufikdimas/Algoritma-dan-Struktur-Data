@@ -172,7 +172,26 @@ public class BukuMain26 {
 1. Jelaskan fungsi break yang ada pada method FindSeqSearch!<br>
 Jawab : Fungsi break pada method tersebut untuk menghentikan perulangan for ketika elemen yang dicari telah ditemukan.<br>
 2. Jika Data Kode Buku yang dimasukkan tidak terurut dari kecil ke besar. Apakah program masih dapat berjalan? Apakah hasil yang dikeluarkan benar? Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan Mengapa hal tersebut bisa terjadi?<br>
+jawab : program masih bisa berjalan, dan dapat mencari data yang diinginkan menggunakan sequensial sort karena sorting tersebut dapat menacri data yang acak<br>
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1ec5dab1-9029-4b26-910f-3a44a734b343)
+
 3. Buat method baru dengan nama FindBuku menggunakan konsep sequential search dengan tipe method dari FindBuku adalah BukuNoAbsen. Sehingga Anda bisa memanggil method tersebut pada class BukuMain seperti gambar berikut :<br>
+jawab :
+``` java
+public Buku26 Findbuku(int cari) {
+        int posisi = 0;
+        for (int j = 0; j < listBK.length; j++) {
+            if (listBK[j].kodeBuku == cari) {
+                break;
+            }
+        }
+        return listBK[posisi];
+    }
+```
+``` java
+Buku26 dataBuku26 = data.Findbuku(cari);
+        dataBuku26.tampilDataBuku();
+```
 
 ## **6.3. Searching / Pencarian Menggunakan Binary Search**
 ### **6.3.1. Langkah-langkah Percobaan Binary Search**
@@ -207,9 +226,40 @@ public int FindBinarySearch(int cari, int left, int right) {
 
 ### **6.3.3 Pertanyaan**
 1. Tunjukkan pada kode program yang mana proses divide dijalankan!<br>
+jawab : terjadi proses divide untuk membagi rentang pencarian menjadi dua bagian<br>
+``` java
+        if (right >= left) {
+            int mid = left + (right - left) / 2;
+```
 2. Tunjukkan pada kode program yang mana proses conquer dijalankan!<br>
+jawab : conqueror terjadi saat pengecekan apakah nilai tengah sesuai dengan nilai yang dicari
+``` java
+if (listBK[mid].kodeBuku == cari)
+```
 3. Jika data Kode Buku yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa demikian! Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan mengapa hal tersebut bisa terjadi?<br>
-4. Jika Kode Buku yang dimasukkan dari Kode Buku terbesar ke terkecil (missal : 20215, 20214, 20212, 20211, 20210) dan elemen yang dicari adalah 20210. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai!<br>
+jawab : program tetap bisa berjalan namun hasilnya tidak akurat, karena binary t search idak dapat mendapat membagi data dengan benar apabila datanya acak.<br>
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/824f86cb-6ecb-454f-870a-2dc6972df850)
+
+5. Jika Kode Buku yang dimasukkan dari Kode Buku terbesar ke terkecil (missal : 20215, 20214, 20212, 20211, 20210) dan elemen yang dicari adalah 20210. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai!<br>
+jawab : hasilnya tidak ditemukan karena binary search mengasusmsikan elemen array terurut secara meningkat,
+``` java
+ public int findBinarySearch(int cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = (right + left) / 2;
+            if (cari == listBK[mid].kodeBuku) {
+                return mid;
+            } else if (listBK[mid].kodeBuku < cari) {
+                return findBinarySearch(cari, left, mid - 1);
+            } else {
+                return findBinarySearch(cari, mid + 1, right);
+            }
+        }
+        return -1;
+    }
+```
+![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/4fa20428-ad07-4bc4-b605-af69e7ecb69d)
+
 
 ## **6.4. Percobaan Pengayaan Divide and Conquer**
 ### **6.4.1. Langkah-langkah Percobaan Merge Sort**
@@ -287,4 +337,5 @@ public class MergeSortMain26 {
 ### **6.4.2 Verifikasi Hasil Percobaan**
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/6ba23ed5-dea4-47e7-a82f-5c3a384da345)
 
-### **6.4.3 Pertanyaan**
+
+# **Latihan Pratikum**
