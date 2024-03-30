@@ -165,7 +165,7 @@ public class BukuMain26 {
 ``` jika data ditemukan```
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/718bbc3a-9922-4dcc-8c73-7e213d47acec)
 
-``` jika data tidak ditemukan
+``` jika data tidak ditemukan```
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/bc730e92-1ae5-4011-8d4b-2e0eea58ec21)
 
 ### **6.2.3 Pertanyaan**
@@ -177,6 +177,7 @@ public class BukuMain26 {
 ### **6.3.1. Langkah-langkah Percobaan Binary Search**
 
 ``` Method Binary Search```
+
 ``` java
 public int FindBinarySearch(int cari, int left, int right) {
         if (right >= left) {
