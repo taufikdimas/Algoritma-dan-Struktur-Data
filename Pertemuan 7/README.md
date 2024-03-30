@@ -157,6 +157,7 @@ public class BukuMain26 {
     }
 
 }
+```
 
 ### **6.2.2 Verifikasi Hasil Percobaan**
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1222e441-f1a5-4cf6-b307-8778ec104364)
