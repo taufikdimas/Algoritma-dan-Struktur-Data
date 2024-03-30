@@ -162,14 +162,15 @@ public class BukuMain26 {
 ### **6.2.2 Verifikasi Hasil Percobaan**
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/1222e441-f1a5-4cf6-b307-8778ec104364)
 
-``` jika data ditemukan```
+``` jika data ditemukan```<br>
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/718bbc3a-9922-4dcc-8c73-7e213d47acec)
 
-``` jika data tidak ditemukan```
+``` jika data tidak ditemukan```<br>
 ![image](https://github.com/taufikdimas/Algoritma-dan-Struktur-Data/assets/143729231/bc730e92-1ae5-4011-8d4b-2e0eea58ec21)
 
 ### **6.2.3 Pertanyaan**
 1. Jelaskan fungsi break yang ada pada method FindSeqSearch!<br>
+Jawab : Fungsi break pada method tersebut untuk menghentikan perulangan for ketika elemen yang dicari telah ditemukan.<br>
 2. Jika Data Kode Buku yang dimasukkan tidak terurut dari kecil ke besar. Apakah program masih dapat berjalan? Apakah hasil yang dikeluarkan benar? Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan Mengapa hal tersebut bisa terjadi?<br>
 3. Buat method baru dengan nama FindBuku menggunakan konsep sequential search dengan tipe method dari FindBuku adalah BukuNoAbsen. Sehingga Anda bisa memanggil method tersebut pada class BukuMain seperti gambar berikut :<br>
 
