@@ -356,11 +356,43 @@ public class Buku26 {
         this.Pengarang = Pengarang;
         this.stock = stock;
     }
-//
-- Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan
-``` java
+```
+note : ketika tipe data kode buku diubah menjadi String, akan mempengaruhi proses pencaria kodeBuku pada beberpa method seperti findSeqSearch, findBuku, findBinarySearch, tampilPosisi, dan tampilData. sehingga proses nya harus diubah menggunakan equals untuk membandingkan String.<br>
 
-sequential search dan binary search.
+- Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan sequential search dan binary search.
+``` Sequential search```
+``` java
+    public int findSeqsearch(String cari) {
+        int posisi = -1;
+        for (int i = 0; i < listBK.length; i++) {
+            if (listBK[i].kodeBuku.equals(cari)) { 
+                break;
+            }
+        }
+        return posisi;
+    }
+```
+``` Binary Search```
+``` java
+    public int findBinarySearch(String cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = (right + left) / 2;
+            if (cari.equals(listBK[mid].kodeBuku)) {
+                return mid;
+            } else {
+                int posisiKiri = findBinarySearch(cari, left, mid - 1);
+                int posisiKanan = findBinarySearch(cari, mid + 1, right);
+                if (posisiKanan != -1) {
+                    return posisiKanan;
+                } else if (posisiKiri != -1) {
+                    return posisiKiri;
+                }
+            }
+        }
+        return -1;
+    }
+```
 2. Modifikasi percobaan searching diatas dengan ketentuan berikut ini
   - Tambahkan method pencarian judul buku menggunakan sequential search dan binary
 search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan
