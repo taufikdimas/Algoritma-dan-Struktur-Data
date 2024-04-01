@@ -394,10 +394,159 @@ note : ketika tipe data kode buku diubah menjadi String, akan mempengaruhi prose
     }
 ```
 2. Modifikasi percobaan searching diatas dengan ketentuan berikut ini
-  - Tambahkan method pencarian judul buku menggunakan sequential search dan binary
-search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan
-dengan menggunakan algoritma Sorting (bebas pilih algoritma sorting apapun)! Sehingga
-ketika input data acak, maka algoritma searching akan tetap berjalan
+  - Tambahkan method pencarian judul buku menggunakan sequential search dan binary search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan dengan menggunakan algoritma Sorting (bebas pilih algoritma sorting apapun)! Sehingga ketika input data acak, maka algoritma searching akan tetap berjalan
+``` java
+public void sortBukuJudul() {
+        Arrays.sort(listBK, 0, idx, Comparator.comparing(buku -> buku.judulBuku));
+    }
+
+    public int findBinarySearchJudul(String cari, int left, int right) {
+        sortBukuJudul();
+
+        int mid;
+        while (left <= right) {
+            mid = left + (right - left) / 2;
+            int compareResult = cari.compareTo(listBK[mid].judulBuku);
+            if (compareResult == 0) {
+                return mid;
+            } else if (compareResult < 0) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    public int findSeqSearchJudul(String cari) {
+        int count = 0;
+        for (int i = 0; i < idx; i++) {
+            if (listBK[i].judulBuku.equalsIgnoreCase(cari)) {
+                count++;
+            }
+        }
+        return count;
+    }
+```
+
 - Buat aturan untuk mendeteksi hasil pencarian judul buku yang lebih dari 1 hasil dalam
 bentuk kalimat peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang
 diberikan!
+``` java
+        System.out.println("Pencarian Judul Buku menggunakan Binary Search");
+        int posisiJudulBukuBinary = data.findBinarySearchJudul(cariJudulBuku, 0, jumBuku - 1);
+        if (posisiJudulBukuBinary != -1) {
+            System.out.println("Judul buku ditemukan pada indeks: " + posisiJudulBukuBinary);
+            System.out.println("Data buku dengan judul yang sama:");
+            for (int i = posisiJudulBukuBinary; i < data.idx; i++) {
+                if (data.listBK[i].judulBuku.equalsIgnoreCase(cariJudulBuku)) {
+                    data.listBK[i].tampilDataBuku();
+                } else {
+                    break;
+                }
+            }
+        } else {
+            System.out.println("Judul buku tidak ditemukan.");
+        }
+
+        System.out.println("Pencarian Judul Buku menggunakan Sequential Search");
+        int jumlahJudulBukuSequential = data.findSeqSearchJudul(cariJudulBuku);
+        if (jumlahJudulBukuSequential > 0) {
+            System.out.println("Ditemukan " + jumlahJudulBukuSequential + " buku dengan judul yang sama:");
+            for (int i = 0; i < data.idx; i++) {
+                if (data.listBK[i].judulBuku.equalsIgnoreCase(cariJudulBuku)) {
+                    data.listBK[i].tampilDataBuku();
+                }
+            }
+        } else {
+            System.out.println("Judul buku tidak ditemukan.");
+        }
+
+```
+
+## **Verifikasi Hasil**
+``` java
+===================================
+Data keseluruhan Buku :
+======================
+Kode Buku : JWK
+Judul Buku : basdat
+Tahun Terbit : 2022
+Pengarang : Taufik
+Stock : 9
+======================
+Kode Buku : REQ109
+Judul Buku : basdat
+Tahun Terbit : 2019
+Pengarang : riovaldo
+Stock : 8
+======================
+Kode Buku : SIU118
+Judul Buku : Algoritma
+Tahun Terbit : 2022
+Pengarang : petrus tyang
+Stock : 11
+======================
+Kode Buku : LOL223
+Judul Buku : cyber security
+Tahun Terbit : 2016
+Pengarang : vira
+Stock : 6
+======================
+Kode Buku : COC
+Judul Buku : agama
+Tahun Terbit : 2024
+Pengarang : joko tingkir
+Stock : 3
+===================================
+Pencarian Data
+Masukkan Kode Buku yang dicari
+Kode Buku : LOL223
+Pencarian Kode Buku menggunakan Binary Search
+data : LOL223 ditemukan pada indeks 3
+Kode Buku       : LOL223
+Judul           : cyber security
+Tahun Terbit    : 2016
+Pengarang       : vira
+Stock           : 6
+Pencarian Kode Buku menggunakan Sequential Search
+data : LOL223 ditemukan pada indeks 3
+Kode Buku       : LOL223
+Judul           : cyber security
+Tahun Terbit    : 2016
+Pengarang       : vira
+Stock           : 6
+===================================
+Pencarian Judul Buku
+Masukkan Judul Buku yang dicari
+Judul Buku : basdat
+Pencarian Judul Buku menggunakan Binary Search
+Judul buku ditemukan pada indeks: 2
+Data buku dengan judul yang sama:
+======================
+Kode Buku : JWK
+Judul Buku : basdat
+Tahun Terbit : 2022
+Pengarang : Taufik
+Stock : 9
+======================
+Kode Buku : REQ109
+Judul Buku : basdat
+Tahun Terbit : 2019
+Pengarang : riovaldo
+Stock : 8
+Pencarian Judul Buku menggunakan Sequential Search
+Ditemukan 2 buku dengan judul yang sama:
+======================
+Kode Buku : JWK
+Judul Buku : basdat
+Tahun Terbit : 2022
+Pengarang : Taufik
+Stock : 9
+======================
+Kode Buku : REQ109
+Judul Buku : basdat
+Tahun Terbit : 2019
+Pengarang : riovaldo
+Stock : 8
+```
