@@ -16,7 +16,9 @@ public class Utama26 {
             System.out.println("2. Ambil Barang dari Gudang");
             System.out.println("3. Tampilkan Tumpukan Barang");
             System.out.println("4. Lihat Barang Teratas");
-            System.out.println("5. Keluar");
+            System.out.println("5. Lihat Barang Terbawah");
+            System.out.println("6. Cari Barang");
+            System.out.println("7. Keluar");
             System.out.print("Masukkan Pilihan : ");
             int pilihan = sc26.nextInt();
             sc26.nextLine();
@@ -47,6 +49,14 @@ public class Utama26 {
                     }
                     break;
                 case 5:
+                    gudang.lihatBarangTerbawah();
+                    break;
+                case 6:
+                    System.out.print("Masukkan kode atau nama barang yang ingin dicari: ");
+                    String keyword = sc26.nextLine();
+                    gudang.cariBarang(keyword);
+                    break;
+                case 7:
                     System.exit(0);
                 default:
                     System.out.println("Pilihan tidak valid, Silahkan coba lagi");

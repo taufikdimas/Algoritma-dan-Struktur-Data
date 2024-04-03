@@ -75,4 +75,30 @@ public class Gudang26 {
         }
         return biner;
     }
+
+    public void lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            System.out.println("Barang terbawah: " + tumpukan[0].nama);
+        } else {
+            System.out.println("Tumpukan barang kosong");
+        }
+    }
+
+    public void cariBarang(String keyword) {
+        boolean found = false;
+        if (!cekKosong()) {
+            for (int i = 0; i <= top; i++) {
+                if (tumpukan[i].nama.equalsIgnoreCase(keyword) || tumpukan[i].kode == Integer.parseInt(keyword)) {
+                    System.out.println("Barang ditemukan:");
+                    System.out.printf("Kode: %d, Nama: %s, Kategori: %s\n", tumpukan[i].kode, tumpukan[i].nama,
+                            tumpukan[i].kategori);
+                    found = true;
+                    break;
+                }
+            }
+        }
+        if (!found) {
+            System.out.println("Barang tidak ditemukan");
+        }
+    }
 }
