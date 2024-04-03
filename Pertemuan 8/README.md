@@ -244,7 +244,69 @@ Kode 33: Pizza (Kategori makanan)
 Kode 21: Majalah (Kategori Buku)
 ```
 2. Berapa banyak data barang yang dapat ditampung di dalam tumpukan? Tunjukkan potongan kode programnya!<br>
-jawab : 7 , ``` java Gudang26 gudang = new Gudang26(7);
-```
+jawab : 7 , ``` Gudang26 gudang = new Gudang26(7);```<br>
 3. Mengapa perlu pengecekan kondisi !cekKosong() pada method tampilkanBarang? Kalau kondisi tersebut dihapus, apa dampaknya?<br>
+jawab :  Pengecekan kondisi `!cekKosong()` pada method `tampilkanBarang()` dilakukan untuk memastikan bahwa hanya akan mencoba untuk menampilkan barang jika tumpukan tidak kosong. Jika kondisi tersebut dihapus, program akan mencoba untuk melakukan iterasi terhadap array tumpukan yang kosong, yang dapat menyebabkan error atau output yang tidak diinginkan.<br>
 4. Modifikasi kode program pada class Utama sehingga pengguna juga dapat memilih operasi lihat barang teratas, serta dapat secara bebas menentukan kapasitas gudang!<br>
+jawab :
+``` modifikasi program```
+``` java
+int kapasitasGudang = sc26.nextInt();//kapasistas gudang sesuai input
+//melihat barang teratas
+case 4:
+                    if (!gudang.cekKosong()) {
+                        System.out.println("Barang teratas: " + gudang.tumpukan[gudang.top].nama);
+                    } else {
+                        System.out.println("Tumpukan barang kosong");
+                    }
+                    break;
+```
+``` Verifiksi hasil Modifikasi```
+``` java
+Masukkan kapasitas gudang: 2
+
+Menu :
+1. Tambahkan Barang ke Gudang
+2. Ambil Barang dari Gudang
+3. Tampilkan Tumpukan Barang
+4. Lihat Barang Teratas
+5. Keluar
+Masukkan Pilihan : 1
+Masukkan Kode Barang: 26
+Masukkan Nama : Laptop
+Masukkan Kategori : Elektronik
+Barang Laptop berhasil ditambahkan ke gudang
+
+Menu :
+1. Tambahkan Barang ke Gudang
+2. Ambil Barang dari Gudang
+3. Tampilkan Tumpukan Barang
+4. Lihat Barang Teratas
+5. Keluar
+Masukkan Pilihan : 1
+Masukkan Kode Barang: 48 
+Masukkan Nama : HP
+Masukkan Kategori : Elektronik
+Barang HP berhasil ditambahkan ke gudang
+
+Menu :
+1. Tambahkan Barang ke Gudang
+2. Ambil Barang dari Gudang
+3. Tampilkan Tumpukan Barang
+4. Lihat Barang Teratas
+5. Keluar
+Masukkan Pilihan : 1
+Masukkan Kode Barang: 34 
+Masukkan Nama : TWS
+Masukkan Kategori : Elektronik
+GAGAL!!! , Tumpukan barang digudang sudah penuh
+
+Menu :
+1. Tambahkan Barang ke Gudang
+2. Ambil Barang dari Gudang
+3. Tampilkan Tumpukan Barang
+4. Lihat Barang Teratas
+5. Keluar
+Masukkan Pilihan : 4
+Barang teratas: HP
+```
