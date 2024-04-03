@@ -22,7 +22,7 @@
 ***
 
 ## **7.1 Percobaan 1: Penyimpanan Tumpukan Barang dalam Gudang**
-### **7.2.1. Langkah-langkah Percobaan**
+### **7.1.1. Langkah-langkah Percobaan**
 ``` Class Barang```
 ``` java
 package Stack;
@@ -154,7 +154,7 @@ public class Utama26 {
     }
 }
 ```
-### **7.2.2 Verifikasi Hasil Percobaan**
+### **7.1.2 Verifikasi Hasil Percobaan**
 ``` java
 Menu :
 1. Tambahkan Barang ke Gudang
@@ -207,7 +207,7 @@ Rincian tumpukan barang digudang
 Kode 21: Majalah (Kategori Buku)
 Kode 33: Pizza (Kategori Makanan)
 ```
-### **7.2.3 Pertanyaan**
+### **7.1.3 Pertanyaan**
 1. Lakukan perbaikan pada kode program, sehingga keluaran yang dihasilkan sama dengan verifikasi hasil percobaan! Bagian mana saja yang perlu diperbaiki?<br>
 Jawab : Bagian yang diubah adalah pada method tampilBarang bagian iterasinya ```  for (int i = top; i >= 0; i--)``` sehingga iterasi dilakukan dari indeks teratas ke indeks terbawah.<br>
 ``` java
@@ -248,7 +248,7 @@ jawab : 7 , ``` Gudang26 gudang = new Gudang26(7);```<br>
 3. Mengapa perlu pengecekan kondisi !cekKosong() pada method tampilkanBarang? Kalau kondisi tersebut dihapus, apa dampaknya?<br>
 jawab :  Pengecekan kondisi `!cekKosong()` pada method `tampilkanBarang()` dilakukan untuk memastikan bahwa hanya akan mencoba untuk menampilkan barang jika tumpukan tidak kosong. Jika kondisi tersebut dihapus, program akan mencoba untuk melakukan iterasi terhadap array tumpukan yang kosong, yang dapat menyebabkan error atau output yang tidak diinginkan.<br>
 4. Modifikasi kode program pada class Utama sehingga pengguna juga dapat memilih operasi lihat barang teratas, serta dapat secara bebas menentukan kapasitas gudang!<br>
-jawab :
+jawab :<br>
 ``` modifikasi program```
 ``` java
 int kapasitasGudang = sc26.nextInt();//kapasistas gudang sesuai input
@@ -310,3 +310,6 @@ Menu :
 Masukkan Pilihan : 4
 Barang teratas: HP
 ```
+
+## **7.2. Percobaan 2: Konversi Kode Barang ke Biner**
+### **7.2.1. Langkah-langkah Percobaan Binary Search**
