@@ -41,6 +41,7 @@ public class Gudang26 {
             Barang26 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " berhasil diambil dari Gudang");
+            System.out.println("Kode unik dalam biner : " + konversiDesimalkeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong");
@@ -59,5 +60,19 @@ public class Gudang26 {
         } else {
             System.out.println("Tumpukan barang kosong");
         }
+    }
+
+    public String konversiDesimalkeBiner(int kode) {
+        StackKonversi26 stack = new StackKonversi26();
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner = biner + stack.pop();
+        }
+        return biner;
     }
 }
