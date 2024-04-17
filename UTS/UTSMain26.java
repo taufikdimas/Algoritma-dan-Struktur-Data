@@ -1,6 +1,7 @@
 package UTS;
 
 import java.util.Arrays;
+import java.util.Scanner; // tambahkan import untuk Scanner
 
 public class UTSMain26 {
 
@@ -9,7 +10,7 @@ public class UTSMain26 {
 
         UTSClass26 UTSAlsd = new UTSClass26(data);
 
-        System.out.println("Data awal : " + Arrays.toString(data));
+        System.out.println("Data awal               : " + Arrays.toString(data));
 
         // Sorting ascending
         int[] ascendingData = UTSAlsd.AscendingSorting();
@@ -21,17 +22,29 @@ public class UTSMain26 {
         UTS26.selectionSortDesc(descendingData);
         System.out.println("Sorted data (descending): " + Arrays.toString(descendingData));
 
-        int key1 = 30; // Nilai sebelum sorting
-        int key2 = 30; // Nilai setelah ascending sorting
-        int key3 = 30; // Nilai setelah descending sorting
-        int key4 = 26; // Nilai tidak ditemukan
+        Scanner scanner = new Scanner(System.in); // Buat objek Scanner
+
+        // Input nilai-nilai key dari pengguna
+        System.out.println();
+        System.out.print("Masukkan nilai sebelum sorting: ");
+        int key1 = scanner.nextInt();
+        System.out.print("Masukkan nilai setelah ascending sorting: ");
+        int key2 = scanner.nextInt();
+        System.out.print("Masukkan nilai setelah descending sorting: ");
+        int key3 = scanner.nextInt();
+        System.out.print("Masukkan nilai yang tidak ditemukan: ");
+        int key4 = scanner.nextInt();
 
         int[] dataAwal = UTSAlsd.Data();
+        System.out.println();
         System.out.println("Index " + key1 + " sebelum sorting : " + UTS26.binarySearch(dataAwal, key1));
-        System.out.println(
-                "Index " + key2 + " setelah ascending sorting  : " + UTS26.binarySearch(ascendingData, key2));
-        System.out.println(
-                "Index " + key3 + " setelah descending sorting : " + UTS26.binarySearch(descendingData, key3));
+        System.out
+                .println("Index " + key2 + " setelah ascending sorting  : " + UTS26.binarySearch(ascendingData, key2));
+        System.out
+                .println("Index " + key3 + " setelah descending sorting : " + UTS26.binarySearch(descendingData, key3));
         System.out.println("Nilai " + key4 + " tidak ditemukan : " + UTS26.binarySearch(dataAwal, key4));
+
+        // Tutup Scanner setelah selesai penggunaan
+        scanner.close();
     }
 }

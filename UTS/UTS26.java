@@ -34,17 +34,23 @@ public class UTS26 {
     }
 
     // Binary search
-    public static int binarySearch(int[] arr, int key) {
-        int low = 0;
-        int high = arr.length - 1;
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            if (arr[mid] == key) {
+    public static int binarySearch(int[] arr, int nilai) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (arr[mid] == nilai) {
                 return mid;
-            } else if (arr[mid] < key) {
-                low = mid + 1;
             } else {
-                high = mid - 1;
+                if (arr[left] == nilai) {
+                    return left;
+                }
+                if (arr[right] == nilai) {
+                    return right;
+                }
+                left++;
+                right--;
             }
         }
         return -1;
