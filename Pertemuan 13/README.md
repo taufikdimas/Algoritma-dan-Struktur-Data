@@ -667,3 +667,451 @@ Taufik telah selesai divaksinasi.
 ```
 
 ### **Tugas 2 : program antrian vaksinasi menggunakan queue berbasis double linked list**
+
+- Code `Node26.java`
+```java
+package Tugas2;
+
+public class Node26 {
+    int id;
+    String judul;
+    double rating;
+    Node26 prev, next;
+
+    public Node26(int id, String judul, double rating, Node26 prev, Node26 next) {
+        this.id = id;
+        this.judul = judul;
+        this.rating = rating;
+        this.prev = prev;
+        this.next = next;
+    }
+}
+```
+
+- Code `DaftarFilm.java`
+```java
+package Tugas2;
+
+public class DaftarFilm {
+    Node26 head;
+    Node26 tail;
+
+    public DaftarFilm() {
+        head = null;
+        tail = null;
+    }
+
+    public boolean isEmpty() {
+        return head == null;
+    }
+
+    public void addFirst(int id, String judul, double rating) {
+        Node26 newNode = new Node26(id, judul, rating, null, head);
+        if (isEmpty()) {
+            tail = newNode;
+        } else {
+            head.prev = newNode;
+        }
+        head = newNode;
+    }
+
+    public void addLast(int id, String judul, double rating) {
+        Node26 newNode = new Node26(id, judul, rating, tail, null);
+        if (isEmpty()) {
+            head = newNode;
+        } else {
+            tail.next = newNode;
+        }
+        tail = newNode;
+    }
+
+    public void insertAt(int index, int id, String judul, double rating) {
+        if (index < 0 || index > size()) {
+            System.out.println("data tidak ada ");
+            return;
+        }
+        if (index == 0) {
+            addFirst(id, judul, rating);
+            return;
+        }
+        if (index == size()) {
+            addLast(id, judul, rating);
+            return;
+        }
+        Node26 current = head;
+        for (int i = 0; i < index - 1; i++) {
+            current = current.next;
+        }
+        Node26 newNode = new Node26(id, judul, rating, current, current.next);
+        current.next.prev = newNode;
+        current.next = newNode;
+    }
+
+    public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("list kosong mazzeh");
+            return;
+        }
+        if (head == tail) {
+            head = null;
+            tail = null;
+            return;
+        }
+        head = head.next;
+        head.prev = null;
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("List kosong mazzeh");
+            return;
+        }
+        if (head == tail) {
+            head = null;
+            tail = null;
+            return;
+        }
+        tail = tail.prev;
+        tail.next = null;
+    }
+
+    public void removeAt(int index) {
+        if (index < 0 || index >= size()) {
+            System.out.println("data tidak ada ");
+            return;
+        }
+        if (index == 0) {
+            removeFirst();
+            return;
+        }
+        if (index == size() - 1) {
+            removeLast();
+            return;
+        }
+        Node26 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.prev.next = current.next;
+        current.next.prev = current.prev;
+    }
+
+    public int size() {
+        int count = 0;
+        Node26 current = head;
+        while (current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
+    public Node26 CariId(int id) {
+        Node26 current = head;
+        while (current != null) {
+            if (current.id == id) {
+                return current;
+            }
+            current = current.next;
+        }
+        return null;
+    }
+
+    public void print() {
+        if (isEmpty()) {
+            System.out.println("list kosong mazzeh");
+            return;
+        }
+        Node26 current = head;
+        System.out.println("ID\tJudul\tRating");
+        while (current != null) {
+            System.out.println(current.id + "\t" + current.judul + "\t" + current.rating);
+            current = current.next;
+        }
+    }
+
+    public void sortRatingDesc() {
+        for (Node26 i = head; i != null; i = i.next) {
+            for (Node26 j = head; j != null; j = j.next) {
+                if (i.rating > j.rating) {
+                    double tempRating = i.rating;
+                    i.rating = j.rating;
+                    j.rating = tempRating;
+
+                    int tempId = i.id;
+                    i.id = j.id;
+                    j.id = tempId;
+
+                    String tempJudul = i.judul;
+                    i.judul = j.judul;
+                    j.judul = tempJudul;
+                }
+            }
+        }
+    }
+}
+```
+
+- Code `Main.java`
+```java
+package Tugas2;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        DaftarFilm daftarFilm = new DaftarFilm();
+        Scanner sc26 = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("=====================================");
+            System.out.println("|        Data Film Layar Lebar      |");
+            System.out.println("=====================================");
+            System.out.println("Menu:");
+            System.out.println("1. Tambah data awal");
+            System.out.println("2. Tambah data akhir");
+            System.out.println("3. Tambah data pada indeks tertentu");
+            System.out.println("4. Hapus data pertama");
+            System.out.println("5. Hapus data terakhir");
+            System.out.println("6. Hapus data pada indeks tertentu");
+            System.out.println("7. Cetak data");
+            System.out.println("8. Cari film berdasarkan ID");
+            System.out.println("9. Urutan Data Rating Film-Desc");
+            System.out.println("10. Keluar");
+            System.out.println("=====================================");
+            System.out.print("Pilihan: ");
+            int choice = sc26.nextInt();
+            sc26.nextLine();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Masukkan Data Film Posisi Awal ");
+                    System.out.print("Masukkan ID film: ");
+                    int id1 = sc26.nextInt();
+                    sc26.nextLine();
+                    System.out.print("Masukkan judul film: ");
+                    String judul1 = sc26.nextLine();
+                    System.out.print("Masukkan rating film: ");
+                    double rating1 = Double.parseDouble(sc26.nextLine().replace(",", "."));
+                    daftarFilm.addFirst(id1, judul1, rating1);
+                    break;
+                case 2:
+                    System.out.println("Masukkan Data Film Posisi Akhir ");
+                    System.out.print("Masukkan ID film: ");
+                    int id2 = sc26.nextInt();
+                    sc26.nextLine();
+                    System.out.print("Masukkan judul film: ");
+                    String judul2 = sc26.nextLine();
+                    System.out.print("Masukkan rating film: ");
+                    double rating2 = Double.parseDouble(sc26.nextLine().replace(",", "."));
+                    daftarFilm.addLast(id2, judul2, rating2);
+                    break;
+                case 3:
+                    System.out.println("Masukkan Data Film Posisi Tertentu ");
+                    System.out.print("Masukkan No. Urutan: ");
+                    int index3 = sc26.nextInt();
+                    sc26.nextLine();
+                    System.out.print("Masukkan ID film: ");
+                    int id3 = sc26.nextInt();
+                    sc26.nextLine();
+                    System.out.print("Masukkan judul film: ");
+                    String judul3 = sc26.nextLine();
+                    System.out.print("Masukkan rating film: ");
+                    double rating3 = Double.parseDouble(sc26.nextLine().replace(",", "."));
+                    daftarFilm.insertAt(index3, id3, judul3, rating3);
+                    break;
+                case 4:
+                    daftarFilm.removeFirst();
+                    break;
+                case 5:
+                    daftarFilm.removeLast();
+                    break;
+                case 6:
+                    System.out.print("Masukkan No. Urutan yang ingin dihapus: ");
+                    int index6 = sc26.nextInt();
+                    sc26.nextLine();
+                    daftarFilm.removeAt(index6);
+                    break;
+                case 7:
+                    daftarFilm.print();
+                    break;
+                case 8:
+                    System.out.print("Masukkan ID film yang ingin dicari: ");
+                    int searchId = sc26.nextInt();
+                    Node26 foundFilm = daftarFilm.CariId(searchId);
+                    if (foundFilm != null) {
+                        System.out.println("Film ditemukan:");
+                        System.out.println("ID: " + foundFilm.id);
+                        System.out.println("Judul: " + foundFilm.judul);
+                        System.out.println("Rating: " + foundFilm.rating);
+                    } else {
+                        System.out.println("Film dengan ID " + searchId + " tidak ditemukan.");
+                    }
+                    break;
+                case 9:
+                    daftarFilm.sortRatingDesc();
+                    System.out.println("Data telah diurutkan berdasarkan rating secara descending.");
+                    daftarFilm.print();
+                    break;
+                case 10:
+                    System.out.println("Terima kasih telah menggunakan program ini.");
+                    System.exit(0);
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan pilih lagi.");
+            }
+        }
+    }
+}
+```
+
+### **Verifikasi Hasil**
+
+- **Menu dan Penambahan Data**
+```java
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 1
+Masukkan Data Film Posisi Awal 
+Masukkan ID film: 1233
+Masukkan judul film: One Piece
+Masukkan rating film: 9.9
+```
+```java
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 2
+Masukkan Data Film Posisi Akhir
+Masukkan ID film: 8776
+Masukkan judul film: Kimi No Nawa
+Masukkan rating film: 8.7
+```
+```java
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 3
+Masukkan Data Film Posisi Tertentu 
+Masukkan No. Urutan: 1//mulai index 0
+Masukkan ID film: 9987
+Masukkan judul film: Koe No katachi
+Masukkan rating film: 9.5
+```
+- **Cetak Data**
+```java
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 7
+ID      Judul   Rating
+1233    One Piece       9.9
+9987    Koe No katachi  9.5
+8776    Kimi No Nawa    8.7
+```
+
+- **Urutan Rating desc**
+```java
+Pilihan: 7
+ID      Judul   Rating
+1233    One Piece       9.9
+9987    Koe No katachi  9.5
+8776    Kimi No Nawa    8.7
+5678    Seishun Buta Yarou      9.6
+7272    Tenki no Ko     9.8
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 9
+Data telah diurutkan berdasarkan rating secara descending.
+ID      Judul   Rating
+1233    One Piece       9.9
+7272    Tenki no Ko     9.8
+5678    Seishun Buta Yarou      9.6
+9987    Koe No katachi  9.5
+8776    Kimi No Nawa    8.7
+```
+- **Pencarian Data**
+```java
+=====================================
+|        Data Film Layar Lebar      |
+=====================================
+Menu:
+1. Tambah data awal
+2. Tambah data akhir
+3. Tambah data pada indeks tertentu
+4. Hapus data pertama
+5. Hapus data terakhir
+6. Hapus data pada indeks tertentu
+7. Cetak data
+8. Cari film berdasarkan ID
+9. Urutan Data Rating Film-Desc
+10. Keluar
+=====================================
+Pilihan: 8
+Masukkan ID film yang ingin dicari: 1233
+Film ditemukan:
+ID: 1233
+Judul: One Piece
+Rating: 9.9
+```
